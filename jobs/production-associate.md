@@ -5,49 +5,38 @@ active: true
 title: Production Associate
 ---
 
-We fill bottles, jars and cans with body care products for companies on different filling lines within our light industrial complex that we have and also fill for our online store.
 
-40 Hours Per Week
+**Production Associate Private Label/Bulk Products**
 
-Monday through Friday 8:00 am to 4:30 pm
+**Job Description**
 
-Starting pay is $11.50 Per Hour
+**A Production Associate is assigned to a particular production line within our manufacturing facility.. Tasks are assigned by production leadership, based on the production schedule and line availability. Standard work hours are Monday through Friday 7:00am - 3:30pm with occasional overtime or weekend work.**
 
-Experience in this position is a PLUS
+**Duties and Responsibilities**
 
-### REQUIREMENTS
+* **Effective communication skills to relate pertinent information to superiors**
+* **Detailed and focused attention to details pertinent to the assigned tasks or assignments**
+* **Maintaining consistent throughput of product within written and visual specifications**
+* **High degree of alertness in order to perform within the assigned task.**
+* **Ability to perform independently at an advanced rate  in a fast pace environment** 
+* **Punctuality and work readiness per Employee Handbook and the ability to follow Company Policies and Procedures** 
+* **Understand and obey all Company Safety Procedures and Standard Operating Procedures (SOP’s) to include Personal Protective Equipment (PPE) requirements**
 
-Strong Work Ethic
+**Knowledge, Skills and Abilities**
 
-Sense of Urgency on all requested tasks
+* **High school diploma or equivalent required.**
+* **Ability to work under general supervision, applying a wide variety of  procedures to a variety of problems or situations.**
+* **Basic math and grammar skills**
+* **Strong work ethic**
+* **Good interpersonal communication skills**
+* **Willing to work as needed, at times overtime will be required.**
 
-Daily goal to exceed expectations
+ **    Working Conditions and Physical Effort**
 
-Basic mathematical skills
+* **Ability  to lift upwards of 50 pounds occasionally as needed**
+* **Ability to walk or stand for long periods of time occasionally**
+* **Have good manual dexterity**
+* **Have good eye - hand coordination**
+* **Must be able to work with strong smells occasionally**
 
-Must be able to respond to verbal and written instructions
-
-Must have clean driving record
-
-High School Diploma
-
-Physical ability to repetitively lift up to 60 pounds
-
-Physical ability to be on your feet all day (8 Hour Shifts)
-
-## Knowledge, Skills and Abilities Required
-
-- Line work or production work
-- Good manual dexterity
-
-## Working Conditions and Physical Effort
-
-- **UPPER EXTREMITY REQUIREMENTS**
-  - Lifting, carrying, horizontal reaching, grasping and handling
-- **LOWER EXTREMITY REQUIREMENTS**
-  - Standing, bending, standing and twisting, walking
-
-## Benefits
-
-- Benefits available after 90 days
-- 401K and Vacation available after 1 year of service
+**Reports to the Production Supervisor**
