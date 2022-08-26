@@ -6,7 +6,9 @@ title: Order Fulfillment Associate
 ---
 <!--StartFragment-->
 
-The **Order Fulfilment Associate** works in our warehouse to select, store, pack, and monitor the inventory of products and fill customer orders correctly. The Fulfillment Associate is responsible for ensuring items are properly packaged for shipping and will arrive safely at their destination.\
+The **Order Fulfilment Associate** works in our warehouse to select, store, pack, and monitor the inventory of products and fill customer orders correctly. The Fulfillment Associate is responsible for ensuring items are properly packaged for shipping and will arrive safely at their destination.
+
+\
 **Order Fulfillment Associate Responsibilities:**
 
 * Ability to read customer order sheets and accurately pull product based on the order sheet.
