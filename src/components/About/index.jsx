@@ -8,20 +8,7 @@ const About = () => {
     <section className={about} name="about">
       <h2>About us</h2>
       <div>
-        {/* <p>
-          Bulk Apothecary was founded in mid-2010 as a small brick & mortar
-          specialty retailer in Streetsboro, Ohio, and has since grown to become
-          one of the nation's largest online suppliers of natural ingredients
-          and essential oils. Our primary focus from the beginning was soap and
-          candle-making supplies, but the word of our fantastic prices, amazing
-          quality, and excellent customer service spread. Within three years, we
-          expanded our offering to a wide range of specialty ingredients and
-          vitamin supplements. We had a dominant online presence that was
-          growing by the day. Today, we still operate our small store in Aurora,
-          Ohio but also have an online presence that's growth is nothing short
-          of amazing.
-        </p> */}
-
+       
         <p>
           Natural Essentials, Inc. was founded in 1995 as a family-owned
           business in Aurora, Ohio. Since then, the company has grown from
@@ -36,9 +23,9 @@ const About = () => {
           natural ingredients, essential oils, soap making, and candle making
           supplies. Our main focus at Bulk Apothecary is providing the best
           possible customer service by offering amazing products at great prices
-          and committing daily to positively impact our customers’ experience.
-        </p>
-        <p>
+          and committing daily to positively impact our customers’ experience.{'\n'}
+
+    
           As a family-owned business, our owners ensure that our employees are
           able to spend as much time with their families as possible.
           Maintaining a healthy work-life balance is highly valued here. We only
