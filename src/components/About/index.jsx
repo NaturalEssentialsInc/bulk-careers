@@ -8,21 +8,23 @@ const About = () => {
     <section className={about} name="about">
       <h2>About us</h2>
       <div>
+        <br></br>
         <p>
-          <br />
           Natural Essentials, Inc. was founded in 1995 as a family-owned
           business in Aurora, Ohio. Since then, the company has grown from
           humble beginnings into one of the nation’s top contract filling
-          companies. <br />
-          In 2010, the family launched Bulk Apothecary as a way to expand
-          Natural Essentials. Originally a brick and mortar store in
-          Streetsboro, Bulk Apothecary has also grown rapidly from its
-          grassroots into one of the nation’s largest online retailers of
-          natural ingredients, essential oils, soap making, and candle making
-          supplies. Our main focus at Bulk Apothecary is providing the best
-          possible customer service by offering amazing products at great prices
-          and committing daily to positively impact our customers’ experience.
-          <br />
+          companies.
+        </p>
+        In 2010, the family launched Bulk Apothecary as a way to expand Natural
+        Essentials. Originally a brick and mortar store in Streetsboro, Bulk
+        Apothecary has also grown rapidly from its grassroots into one of the
+        nation’s largest online retailers of natural ingredients, essential
+        oils, soap making, and candle making supplies. Our main focus at Bulk
+        Apothecary is providing the best possible customer service by offering
+        amazing products at great prices and committing daily to positively
+        impact our customers’ experience.
+        <br></br>
+        <p>
           As a family-owned business, our owners ensure that our employees are
           able to spend as much time with their families as possible.
           Maintaining a healthy work-life balance is highly valued here. We only
@@ -50,7 +52,6 @@ const About = () => {
             src="../../images/natural-logo.png"
           />
         </div>
-
         <button>
           <Link duration={700} smooth={true} to="employees">
             Meet our team
