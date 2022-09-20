@@ -25,21 +25,6 @@ const About = () => {
           possible customer service by offering amazing products at great prices
           and committing daily to positively impact our customers’ experience.
         </p>
-        <p>
-    
-          As a family-owned business, our owners ensure that our employees are
-          able to spend as much time with their families as possible.
-          Maintaining a healthy work-life balance is highly valued here. We only
-          operate Monday-Friday so that parents have weekends with their
-          children, provide amazing healthcare and benefits options for all
-          types of families, and, through a team-oriented atmosphere, promote a
-          positive work environment.
-        </p>
-        <p>
-          Employees in all departments have fun, work together, and get the job
-          done!
-        </p>
-
         <div className={wrapper}>
           <StaticImage
             alt="Bulk Apothecary"
