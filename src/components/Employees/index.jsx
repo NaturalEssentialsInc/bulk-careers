@@ -8,23 +8,18 @@ const Employees = () => {
     <section className={team} name="employees">
       <h2>Our employees make us great!</h2>
       <div>
-        <p>
-          We offer proactive, solution-oriented individuals a place to start or
-          build a long-term career. As a hyper-growth company, we are constantly
-          looking for the best and brightest to join our team!
+      <p>
+          As a family-owned business, our owners ensure that our employees are
+          able to spend as much time with their families as possible.
+          Maintaining a healthy work-life balance is highly valued here. We only
+          operate Monday-Friday so that parents have weekends with their
+          children, provide amazing healthcare and benefits options for all
+          types of families, and, through a team-oriented atmosphere, promote a
+          positive work environment.
         </p>
         <p>
-          By joining us Natural Essentials/Bulk Apothecary, you will become part
-          of an organization with a competitive and enthusiastic culture that
-          believes in promoting from within. We recognize that a company is not
-          a building, production lines, equipment, or products, but people. For
-          that reason, we always look for individuals looking to be part of a
-          family and a team. We look for individuals who are looking to build
-          something great!
-        </p>
-        <p>
-          At Natural Essentials/Bulk Apothecary, our people are our most
-          valuable asset. One of our openings could be your perfect opportunity!
+          Employees in all departments have fun, work together, and get the job
+          done!
         </p>
         <div className={icon}>
           <StaticImage
