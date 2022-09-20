@@ -23,8 +23,9 @@ const About = () => {
           natural ingredients, essential oils, soap making, and candle making
           supplies. Our main focus at Bulk Apothecary is providing the best
           possible customer service by offering amazing products at great prices
-          and committing daily to positively impact our customers’ experience.{'\n'}
-
+          and committing daily to positively impact our customers’ experience.
+        </p>
+        <p>
     
           As a family-owned business, our owners ensure that our employees are
           able to spend as much time with their families as possible.
