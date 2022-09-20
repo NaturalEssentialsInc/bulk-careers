@@ -77,13 +77,17 @@ const Employees = () => {
         </div>
         <h3>Our hiring practices</h3>
         <p>
-          An essential element of Natural Essentials/Bulk Apothecary is our
-          commitment to diversity. Natural Essentials/Bulk Apothecary is an
-          Equal Opportunity Employer. We consider applicants, and make all
-          employment decisions, without regard to race, color, religion, creed,
-          gender, national origin, age, disability, marital or veteran status,
-          or any other legally protected status. We are committed to recruiting
-          and retaining the best talent.
+          As a family-owned business, our owners ensure that our employees are
+          able to spend as much time with their families as possible.
+          Maintaining a healthy work-life balance is highly valued here. We only
+          operate Monday-Friday so that parents have weekends with their
+          children, provide amazing healthcare and benefits options for all
+          types of families, and, through a team-oriented atmosphere, promote a
+          positive work environment.
+        </p>
+        <p>
+          Employees in all departments have fun, work together, and get the job
+          done!
         </p>
         <div className={icon}>
           <StaticImage
