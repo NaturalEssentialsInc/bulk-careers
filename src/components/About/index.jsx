@@ -48,8 +48,8 @@ const About = () => {
             placeholder="blurred"
             src="../../images/bulk-logo.png"
           />
-        </div>
-        <div className={wrapper2}>
+    
+       
           <StaticImage
             alt="Natural Essentials Inc"
             height={60}
