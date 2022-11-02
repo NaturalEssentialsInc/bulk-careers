@@ -1,7 +1,7 @@
 ---
 templateKey: Job
 postDate: 2022-09-01T11:26:16.360Z
-active: true
+active: false
 title: "Warehouse Stock Associate "
 ---
 The Warehouse Associate supports the order fulfillment and inventory teams by ensuring incoming product is accurately and efficiently placed throughout the warehouse. Associates move inventory, downstock, support inventory integrity, and support efficient pick flow.
