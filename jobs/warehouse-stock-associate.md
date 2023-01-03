@@ -1,10 +1,12 @@
 ---
 templateKey: Job
-postDate: 2022-09-01T11:26:16.360Z
-active: false
+postDate: 2023-01-03T19:52:20.944Z
+active: true
 title: "Warehouse Stock Associate "
 ---
-The Warehouse Associate supports the order fulfillment and inventory teams by ensuring incoming product is accurately and efficiently placed throughout the warehouse. Associates move inventory, downstock, support inventory integrity, and support efficient pick flow.
+**Job Description:**
+
+The **Warehouse Stock Associate** supports the order fulfillment and inventory teams by ensuring incoming product is accurately and efficiently placed throughout the warehouse. Associates move inventory, downstock, support inventory integrity, and support efficient pick flow.
 
 Job duties may include, but are not limited to:
 
@@ -16,7 +18,7 @@ Job duties may include, but are not limited to:
 * Verify computations against physical count of stock. Examine and inspect stock items for wear and defects
 * Use tow motor for inventory management throughout the day
 
-Reports to the Department Manager
+**Reports to the Inventory Control/Warehouse Manager**
 
 **Physical Requirements:**
 
@@ -25,13 +27,15 @@ Reports to the Department Manager
 * Regularly lift and/or move up to 10 pounds, frequently lift and/or move up to 60 pounds, and occasionally move more than 100 pounds
 * Ability to work in high heat, humidity, or cold, tolerate strong or unpleasant odors, and at times dusty environment
 
-Starting Pay is $16.00 per hour **Monday - Friday 7:00am - 3:30pm schedule**
+**Starting Pay is $18.00 per hour**
 
-Benefits available after 90 days of employment
+**Monday - Friday 7:00AM - 3:30PM +/- schedule**
+
+**Great benefits available after 90 days, including paid holidays - we offer medical coverage that has $0 deductibles, $0 co-pays, and many no cost prescriptions under the plan**
 
 Job Type: Full-time
 
-Salary: $16.00 per hour
+Salary: From $18.00 per hour
 
 Benefits:
 
@@ -54,4 +58,8 @@ Schedule:
 * No nights
 * No weekends
 
-Work Location: One location
+Experience:
+
+* Forklift: 1 year (Required)
+
+Work Location: Aurora, OH
