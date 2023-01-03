@@ -1,18 +1,14 @@
 ---
 templateKey: Job
 postDate: 2022-11-02T13:05:42.545Z
-active: false
-title: Production Associate
+active: true
+title: Production/Assembly Associate
 ---
 <!--StartFragment-->
 
-<!--StartFragment-->
+**Job Description:**
 
-The **Production Associate** cleans and operates factory equipment, works on an assembly line, puts together and inspects products, and adheres to all factory safety guidelines and standards.
-
-We are looking for a hard-working Production Associate to assist in the manufacturing process. The Production Worker's responsibilities include keeping the production area clean, preparing machinery and equipment for use, working the production line as instructed, and strictly following health and safety guidelines.
-
-To be successful as a Production Associate you should be able to work on the production line with consistent speed and accuracy. An outstanding Production Worker should be able to maintain production standards and work towards improving productivity without compromising quality.
+The **Production/Assembly Associate** cleans and operates factory equipment, works on an assembly line, puts together and inspects products, and adheres to all factory safety guidelines and standards. The Production Worker's responsibilities include keeping the production area clean, preparing machinery and equipment for use, working the production line as instructed, and strictly following health and safety guidelines.
 
 **Production Associate Responsibilities:**
 
@@ -23,7 +19,7 @@ To be successful as a Production Associate you should be able to work on the pro
 * Finalize and package products for shipment.
 * Operate and maintain machinery and production line equipment.
 * Monitor the assembly line and remove faulty products.
-* Work on the production line and meet production targets.
+* Work on the production line with speed, efficiency, and a high degree of accuracy and meet production targets both individually, and as a team.
 * Report any issues to the supervisor on duty.
 * Perform other tasks as assigned.
 
@@ -32,11 +28,46 @@ To be successful as a Production Associate you should be able to work on the pro
 * High school diploma/GED.
 * Previous experience working in a factory is beneficial.
 * Experience operating manufacturing machinery.
-* Able to work as part of a team.
+* Able to work both independently and in a team environment.
 * Good communication skills.
 * Basic math skills.
 * Physical dexterity.
 
+Reports to the Plant Manager
+
+**Shift hours: Monday - Friday from 7:00 am to 3:30 pm**
+
+<!--StartFragment-->
+
+**Great benefits available after 90 days - including paid holidays, flexible unpaid time off, and optional healthcare coverage - plans available with $0 deductibles, $0 co-pays, and many $0 prescriptions!**
+
 <!--EndFragment-->
+
+Job Type: Full-time
+
+Salary: $14.50 per hour
+
+Benefits:
+
+* 401(k)
+* 401(k) matching
+* Dental insurance
+* Employee assistance program
+* Employee discount
+* Health insurance
+* Life insurance
+* Paid time off
+* Referral program
+* Vision insurance
+
+Schedule:
+
+* 8 hour shift
+* Day shift
+* Monday to Friday
+* No nights
+* No weekends
+
+Work Location: One location
 
 <!--EndFragment-->
