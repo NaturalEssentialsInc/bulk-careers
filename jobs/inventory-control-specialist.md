@@ -1,38 +1,64 @@
 ---
 templateKey: Job
 postDate: 2022-10-28T14:21:14.011Z
-active: false
-title: Inventory Control Specialist
+active: true
+title: Order Picker/Packer
 ---
 <!--StartFragment-->
 
-The **Inventory Control Specialist** is responsible for assisting in the cycle counting, auditing, and replenishment stocking for Bulk Apothecary, located in Aurora, OH. The hours of work are approximately 7am - 3:30 pm +/-, Monday-Friday. Occasional overtime or weekend work may be required.
+**Job Description:**
 
-**Duties and Responsibilities**
+The **Order Picker/Packer** works in our warehouse to select, store, pack, and monitor the inventory of products and fill customer orders quickly and with a high degree of accuracy. The Order Fulfillment Associate is responsible for ensuring items are properly packaged for shipping and will arrive safely at their destination.
 
-* Cycle count all directly outsourced items
-* Adjust Inventory levels within computer software system
-* Work cross-departmentally to update information and communicate product availability and inventory replenishment
-* Assist in the replenishment stocking of designated aisles and product lines
-* Coordinating the overstock of products sold in pick bins within designated aisles
-* Conduct audits of products and targeted areas
-* Adjust Inventory as needed
-* Provide regular lists or work orders to select area for replenishment
-* Assist Pick/Pack Associates with location of items on the Pick Floor
-* Interpret Raw Material Inventory or Overstock Inventory and work cross-departmentally to complete accurate inventory adjustments
-* Perform additional tasks or duties as needed
+**Order Picker/Packer Responsibilities:**
 
-**Knowledge, Skills and Abilities Required**
+* Ability to read customer order sheets and accurately pull product based on the order sheet.
+* Locate and select the specific stock items to fulfill the customer's order.
+* Place the prepared boxed orders on the correct pallet to be loaded onto shipping trucks.
+* Perform visual inspections of orders to ensure they are correct and ready for shipment.
+* Label orders accurately for shipping.
+* Follow all warehouse safety procedures.
+* Keep the warehouse clean and organized at all times.
 
-* 1-3 years or equivalent experience in Inventory or Warehouse work
-* Strong problem solving skills
-* Strong computer skills - familiarity with Google software and Excel, a plus
-* Excellent organizational skills
+**Order Picker/Packer Requirements:**
 
-**Working Conditions and Physical Effort**
+* A High School diploma or equivalent.
+* Previous experience in Order Fulfillment is preferred
+* Ability to work well in both a team environment and independently.
+* Requires ability to lift items up to 50+/- lbs., long periods of standing, walking, bending, reaching, and squatting.
 
-* Moderate to light physical activity; standing for long periods, frequent bending, pushing up to 60 lbs., frequent walking for up to eight (8) hours per day
-* The ability occasionally move or lift objects over 60 pounds
-* Work involves light exposure to unusual elements, such as temperatures, dirt, dust, fumes, smoke, unpleasant odors, and/or loud noises
+**Schedule: 7:00 a.m. - 3:30 p.m. Monday - Friday, Full-time position**
+
+**Pay Rate: $14.00/hr**
+
+**Great benefits available after 90 days, including paid holidays, flexible unpaid time off, plus we offer medical coverage that has $0 deductibles, $0 co-pays, and many no cost prescriptions under the plan!**
+
+Job Type: Full-time
+
+Salary: $14.00 per hour
+
+Benefits:
+
+* 401(k)
+* 401(k) matching
+* Dental insurance
+* Employee assistance program
+* Employee discount
+* Health insurance
+* Life insurance
+* Paid time off
+* Referral program
+* Vision insurance
+
+Schedule:
+
+* 8 hour shift
+* Day shift
+* Monday to Friday
+* No weekends
+
+Work Location: Aurora, OH
+
+
 
 <!--EndFragment-->
