@@ -2,85 +2,67 @@
 templateKey: Job
 postDate: 2023-01-03T20:09:08.243Z
 active: true
-title: Inside Sales Representative/Account Manager
+title: IT Support Specialist/Help Desk
 ---
 <!--StartFragment-->
 
 **Job Description:**
 
-The Inside Sales Representative/Account Manager is responsible for managing from cradle to grave, customer orders placed with Natural Essentials, Inc. The Sales Representative/Account Manager is a direct point of contact for their assigned accounts. Customer orders are verified and approved by this position before the order is placed. The Account Representative is responsible for coordinating with multiple departments of the company to ensure the output of quality products and on-time deliveries to the customer. This is a full-time position, with hours of work approximately 8:00 AM – 4:30 PM.
+The primary focus of an **IT Help Desk/Support Specialist** is to offer assistance to computer system users. They will monitor, operate, coordinate, assist and train others in the operation of computer hardware, software, and peripherals in order to achieve the desired result of the department and the company as a whole. This role will utilize computer equipment, software and diagnostic tools to perform a broad range of complex information technology tasks.
 
-**Job Responsibilities and Tasks:**
+The **IT Help Desk/Support Specialist** will often need to work independently, but on occasion working as a group will be required. This position will be required to update supervisors on the status of projects and technical issues. They will exercise judgment and creativity in selecting and applying procedures correctly, and will determine when to refer problems to the supervisor or the next level of support. This role may provide information and training to staff on established policies and procedures, or services provided. This is a full time first shift position that is located in Aurora, OH.
 
-* Operates as the direct point of contact for assigned customers
-* Successfully process and deliver orders according to customer needs and requirements
-* Posses working knowledge of products and pricing
-* Inputs new orders into company systems
-* Management of necessary inventory components needed for purchase orders
-* Heavy coordination with the Production division for ensuring
-* Active role in working with Purchasing to order required amount of inventory for customer orders
-* Coordination with the Accounting and Shipping departments to properly organize the release and shipment of customer orders
-* Communication between multiple departments of the company, including but not limited to Manufacturing, Purchasing, Supply Chain, and Quality
-* Regularly update customer on current status of all orders
-* Follow company procedures and processes relevant to Account Management
-* Create and compile required documentation at the start of each Manufacturing job
-* Send reports on sales activity, current and possible issues, and account status
-* Follow up with customer once orders have been delivered to ensure customer satisfaction
+**Duties and Responsibilities**
 
-**Knowledge, Skills and Abilities Required:**
+* Set up and configure computers, peripherals, and accounts
+* Software installation and configuration
+* Provide technical assistance and support for incoming queries and issues related to computer systems, software, and hardware, assistance may be conducted in person or remotely
+* Track all instances of support by creating and updating IT tickets
+* Refer difficult cases to a senior IT member
+* Assist in research and procurement of computer accessories and supplies
 
-* High school diploma, or GED is required.
-* Bachelor's degree preferred
-* Intermediate proficiency with Microsoft Excel or Google Sheets equivalent
-* Basic knowledge and application of Microsoft Office Suite
-* High degree of demonstrated problem solving skills
-* Ability to multitask with a high degree of accuracy is critical in this role
-* A commitment to excellent customer service
-* Ability to quickly establish partnerships with internal and external stakeholders, as well as customers
-* Excellent written and verbal communication skills
-* Ability to work independently, as well as in a team environment
-* Strong time management skills and have the ability to prioritize among competing tasks
+**Knowledge, Skills and Abilities Required**
 
-**Working Conditions and Physical Effort:**
+* Strong analytical and problem solving skills
+* Ability to work efficiently within a team as well as independently
+* Minimum 1 year experience in information technology or technical support
+* Bachelors degree in a related field strongly preferred
+* A+, Network+, Security+, or other technical certifications preferred
 
-* This job operates in a professional office environment
-* Frequent sitting, standing, walking, bending, reaching, and moderate degree of manual dexterity
-* This job description is not designed to cover or contain a comprehensive listing of activities, duties or responsibilities that are required of the employee for this job; Duties, responsibilities, and activities may change at any time with or without notice.
+**Working Conditions and Physical Effort**
 
-Job Type: Full-time
+* Occasional lifting, carrying, pushing, and pulling of items weighing 30 lbs or more
+* Sitting or standing for extended periods of time may be required
+* Must be able to climb ladders and/or operate high lift equipment (no experience required)
 
-Salary: $45,000.00 - $60,000.00 per year
+**Great benefits available including: Paid holidays, paid time off, and optional healthcare coverage - plans available with $0 deductibles, $0 co-pays, and many $0 prescriptions!**
+
+**Schedule:** Monday-Friday 7:00AM-3:30PM +/-
+
+**Salary:** $50,000 per year
 
 Benefits:
 
 * 401(k)
 * 401(k) matching
 * Dental insurance
-* Disability insurance
-* Employee assistance program
 * Employee discount
+* Flexible schedule
 * Health insurance
 * Life insurance
 * Paid time off
+* Referral program
+* Retirement plan
 * Vision insurance
-
-Experience level:
-
-* 1 year
 
 Schedule:
 
 * 8 hour shift
+* Day shift
 * Monday to Friday
-
-Travel requirement:
-
-* No travel
 
 Experience:
 
-* Sales: 1 year (Required)
-
-Work Location: Aurora, OH
+* IT support: 1 year (Required)
 
 <!--EndFragment-->
