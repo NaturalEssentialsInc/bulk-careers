@@ -2,79 +2,78 @@
 templateKey: Job
 postDate: 2023-01-03T20:06:30.465Z
 active: true
-title: "Shipping and Receiving Dock Associate "
+title: "Shipping and Receiving/Quality Control Associate "
 ---
 <!--StartFragment-->
 
 **Job Description:**
 
-The **Shipping and Receiving Dock Associate** role at Natural Essentials, Inc. is a hands on role that is primarily responsible for preparing, organizing, wrapping, and shipping all truck orders and/or loads. This role also includes unloading and loading trucks to assist with the regular volume of inbound/outbound product and material movement at our Shipping & Receiving Docks. This position requires time management skills and the ability to multi-task. The Dock Associate is responsible for performing inventory transactions in the tracking system; as well as organizing all outbound shipments in ordinance with our standardized policies and safety regulations.
+The **Shipping and Receiving Dock/Quality Control Associate** is a **hybrid role**. Candidates **must possess the required skills to operate both on the Shipping and Receiving Dock, and in the Quality Department**. The candidate will report to both the Dock Manager and the Director of Quality. Previous **Forklift experience/certification is a MUST** for this position.
+
+The Shipping and Receiving Dock/Quality Control Associateis responsible for checking the accuracy and integrity of the product entering and exiting the building, as well as managing and maintaining incoming and outgoing truck shipments. This position must review all documentation for completeness, accuracy, and conformance to specifications. This position will also be involved in placing and pulling products via forklift. This role will also work cross-departmentally to ensure safe and timely transport of finished goods and materials to our facilities.
 
 **Duties and Responsibilities:**
 
-* Reads and interprets BOLs, as well as other paperwork
-* Gathers materials for orders
-* Adjusts inventory within company systems to maintain inventory accuracy
-* Placard pallets with proper labeling in preparation for shipment
-* Safely stage and load outbound pallets into staging lanes, loads outbound freight into trailers for shipment
-* Organizes truck orders and BOL based on the carrier it ships through; works with Warehouse Dock Supervisor and/or Warehouse Dock Lead to coordinate staging
-* Pulls product for transfers to other internal divisions of the organization
-* Load and unload trucks using a sit down counterbalanced forklift
-* Wrap outbound freight as required using automated wrapping machine
-* Required to regularly acquire tasks and workload from Warehouse Dock Lead
+* Work alongside the Shipping and Receiving team to ensure truck shipments are scheduled, received, and shipped in a timely and accurate manner
+* Monitor product entering and exiting the building
+* Place and pull product via Forklift
+* Work alongside the quality department to ensure products are being quarantined, tested, accurately labeled, accurately reported on, and placed/pulled in an accurate and efficient manner following a products release
+* Must have an ability to create detailed documents, and the capacity to know what documents are required for particular applications (Ex. Non-conforming material reports, Deviations Change Requests, Line Clearance forms, Label tracking forms, Positive Release Forms, Scrap Reports, Job Addendums, Job Reports)
+* Collect and record product samples for testing and retention
+* Store labels in the proper way, track the usage of all labeling, and also track inventory of labels
+* Must make sure that all in-process and finished goods are status labeled
 
-**Knowledge, Skills and Abilities Required:**
+**Required Skills:**
 
-* 1-3 Years experience operating a tow motor in a warehouse or fulfillment related role or facility
-* Experience working in a shipping or receiving related role with both inbound and outbound product or material movement (preferred)
-* Exhibit strong organization and communication skills
-* Must have basic Math skills and basic knowledge of hazmat signs and symbols
+* Strong organizational and communication skills
+* Attention to detail, awareness of every facet of the production run
+* Ability to problem solve, ability to work with peers, and work independently
+* Basic mathematical skills
+* Proficient in use of basic office equipment; phone, copy machine, fax
+* Must be proficient in Excel, Word, Google Docs and similar software
+* Ability to prepare paperwork, as well as read, sort, and verify numbers and counts
+* Ability to problem solve and/or report problems to appropriate personnel
+* Forklift experience is a must for this position
+* Knowledge of basic hazmat guidelines
 
 **Working Conditions and Physical Effort:**
 
-* Work environment may involve exposure to extreme heat and/or cold, as well as dirt, dust, fumes, unpleasant odors, and loud noises
-* Must be able to lift up to 60 lbs
-* Must be able to drive, sit, stand, and/or walk for a minimum of 8 hours
-* Work environment involves risks such as operating a tow motor as well as other machinery and exposure to chemicals+
-* This job description is not designed to cover or contain a comprehensive listing of activities, duties or responsibilities that are required of the employee for this job; Duties, responsibilities and activities may change at any time with or without notice
+* Regularly able to lift and/or move up to 10 pounds, frequently lift and/or move up to 50 pounds
+* Standing, walking, or sitting for extended periods of time (8 hours or on occasion more) per day
+* Work environment involves minimal exposure to physical risks, such as being around dangerous equipment or working with chemicals
+* Work environment may involve exposure to extreme heat and/or cold, as well as dirt, dust, fumes, unpleasant odors and loud noises in a warehouse or fulfillment environment
 
-**Great benefits available after 90 days - we offer medical coverage that has $0 deductibles, $0 co-pays, and many no cost prescriptions under the plan**
+**Hours: Monday - Friday from 7:00 am to 3:30 pm +/-**
 
-**Paid time off and 401k available after one year**
+**$18.00-$20.00 per hour**
+
+**Great benefits available after 90 days - we offer medical coverage that has $0 deductibles, $0 co-pays, and many no cost prescriptions under the plan.**
 
 Job Type: Full-time
 
-Salary: $18.00 per hour
+Salary: $18.00 - $20.00 per hour
 
 Benefits:
 
 * 401(k)
 * 401(k) matching
 * Dental insurance
-* Employee assistance program
 * Employee discount
 * Flexible schedule
 * Health insurance
 * Life insurance
 * Paid time off
 * Referral program
-* Retirement plan
 * Vision insurance
 
 Schedule:
 
-* 8 hour shift
+* 5x8
 * Day shift
 * Monday to Friday
-* No nights
-* No weekends
 
 Experience:
 
 * Forklift: 1 year (Required)
-
-Work Location: Aurora, OH
-
-
 
 <!--EndFragment-->
