@@ -37,37 +37,12 @@ Reports to the Plant Manager
 
 **Shift hours: Monday - Friday from 7:00 am to 3:30 pm**
 
+**Wage: $14.00-$16.00/HR depending upon experience** 
+
+**Great benefits available after 90 days - including paid holidays,  flexible unpaid time off, and optional healthcare coverage - plans available with $0 deductibles, $0 co-pays, and many $0 prescriptions!**
+
 <!--StartFragment-->
 
-**Great benefits available after 90 days - including paid holidays, flexible unpaid time off, and optional healthcare coverage - plans available with $0 deductibles, $0 co-pays, and many $0 prescriptions!**
-
-<!--EndFragment-->
-
-Job Type: Full-time
-
-Salary: $14.50 per hour
-
-Benefits:
-
-* 401(k)
-* 401(k) matching
-* Dental insurance
-* Employee assistance program
-* Employee discount
-* Health insurance
-* Life insurance
-* Paid time off
-* Referral program
-* Vision insurance
-
-Schedule:
-
-* 8 hour shift
-* Day shift
-* Monday to Friday
-* No nights
-* No weekends
-
-Work Location: One location
+***Natural Essentials, Inc. is an equal opportunity employer and shall not discriminate on the basis of race, color, religion, national origin, gender, age, sex, sexual orientation, gender identity or expression, marital status, mental or physical disability, and genetic information or any other basis protected by applicable law.***
 
 <!--EndFragment-->
