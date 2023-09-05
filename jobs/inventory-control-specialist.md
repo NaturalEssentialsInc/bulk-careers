@@ -29,36 +29,12 @@ The **Order Picker/Packer** works in our warehouse to select, store, pack, and
 
 **Schedule: 7:00 a.m. - 3:30 p.m. Monday - Friday, Full-time position**
 
-**Pay Rate: $14.00/hr**
+**Pay Rate: $14.00-$16.00/HR depending upon experience** 
 
 **Great benefits available after 90 days, including paid holidays, flexible unpaid time off, plus we offer medical coverage that has $0 deductibles, $0 co-pays, and many no cost prescriptions under the plan!**
 
-Job Type: Full-time
+<!--StartFragment-->
 
-Salary: $14.00 per hour
-
-Benefits:
-
-* 401(k)
-* 401(k) matching
-* Dental insurance
-* Employee assistance program
-* Employee discount
-* Health insurance
-* Life insurance
-* Paid time off
-* Referral program
-* Vision insurance
-
-Schedule:
-
-* 8 hour shift
-* Day shift
-* Monday to Friday
-* No weekends
-
-Work Location: Aurora, OH
-
-
+***Natural Essentials, Inc. is an equal opportunity employer and shall not discriminate on the basis of race, color, religion, national origin, gender, age, sex, sexual orientation, gender identity or expression, marital status, mental or physical disability, and genetic information or any other basis protected by applicable law.***
 
 <!--EndFragment-->
