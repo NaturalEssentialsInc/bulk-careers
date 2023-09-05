@@ -28,7 +28,7 @@ The Quality Department Administrative Assistant will provide administrative supp
 
 **Schedule is Monday through Friday 8AM-430PM +/-**
 
-**Wage dependent upon experience**
+**Wage: $18.00-$20.00/HR depending upon experience** 
 
 **Great benefits available after 90 days- we offer medical coverage that has $0 deductibles, $0 co-pays, and many no cost prescriptions under the plan.**
 
