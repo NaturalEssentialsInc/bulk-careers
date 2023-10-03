@@ -1,6 +1,5 @@
 ---
-templateKey: Job
-postDate: 2023-10-03T17:04:28.082Z
+postDate: 2023-10-03T17:05:36.423Z
 active: true
 title: Shipping and Receiving Dock Associate
 ---
