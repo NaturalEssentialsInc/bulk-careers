@@ -37,7 +37,7 @@ Reports to the Plant Manager
 
 **Shift hours: Monday - Friday from 7:00 am to 3:30 pm**
 
-**Wage: $14.00-$16.00/HR depending upon experience** 
+**Wage: $14.50-$16.00/HR depending upon experience** 
 
 **Great benefits available after 90 days - including paid holidays,  flexible unpaid time off, and optional healthcare coverage - plans available with $0 deductibles, $0 co-pays, and many $0 prescriptions!**
 
