@@ -2,7 +2,7 @@
 templateKey: Job
 postDate: 2023-12-11T14:32:31.183Z
 active: true
-title: Machine Set Up Technician
+title: Jr. Maintenance Technician (Machine Set Up)
 ---
 <!--StartFragment-->
 
