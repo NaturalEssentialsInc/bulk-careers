@@ -1,7 +1,7 @@
 ---
 postDate: 2024-01-17T19:46:38.722Z
 active: true
-title: Chemist (1st Shift)
+title: Chemist
 ---
 <!--StartFragment-->
 
