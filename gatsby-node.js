@@ -1,10 +1,12 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const path = require('path');
+const fs = require('fs');
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  return graphql(`
+  const result = await graphql(`
     {
       allMarkdownRemark {
         edges {
@@ -20,41 +22,33 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then((result) => {
-    if (result.errors) {
-      result.errors.forEach((e) => console.error(e.toString()));
-      return Promise.reject(result.errors);
+  `);
+
+  if (result.errors) {
+    result.errors.forEach((e) => console.error(e.toString()));
+    return Promise.reject(result.errors);
+  }
+
+  const posts = result.data.allMarkdownRemark.edges;
+
+  posts.forEach((edge) => {
+    const { slug } = edge.node.fields;
+    const { templateKey } = edge.node.frontmatter;
+    const componentPath = path.resolve(`src/templates/${templateKey}.jsx`);
+
+    if (fs.existsSync(componentPath)) {
+      createPage({
+        path: slug,
+        component: componentPath,
+        context: {
+          id: edge.node.id,
+        },
+      });
+    } else {
+      console.error(`Component file not found: ${componentPath}`);
     }
-
-    const posts = result.data.allMarkdownRemark.edges;
-
-    posts.forEach((edge) => {
-
-
-      const id = edge.node.id;
-try {
-  
-  createPage({
-    path: edge.node.fields.slug,
-    component: path.resolve(
-      `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`
-      ),
-      // additional data can be passed via context
-      context: {
-        id,
-      },
-    });
-    
-  }
-  catch (error) {
-    console.log(error);
-  }
-
-
-    });
   });
 };
-
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
