@@ -32,8 +32,8 @@ exports.createPages = ({ actions, graphql }) => {
 
 
       const id = edge.node.id;
-try {
-  
+
+  console.log(edge.node.fields.slug)
   createPage({
     path: edge.node.fields.slug,
     component: path.resolve(
@@ -45,10 +45,7 @@ try {
       },
     });
     
-  }
-  catch (error) {
-    console.log(error);
-  }
+  
 
 
     });
