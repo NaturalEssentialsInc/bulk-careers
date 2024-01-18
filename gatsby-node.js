@@ -1,5 +1,6 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const { collapseTextChangeRangesAcrossMultipleVersions } = require('typescript');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -33,7 +34,8 @@ exports.createPages = ({ actions, graphql }) => {
 
       const id = edge.node.id;
 
-  console.log( `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`)
+if  (edge.node.frontmatter.templateKey != null) {
+
   createPage({
     path: edge.node.fields.slug,
     component: path.resolve(
@@ -45,12 +47,16 @@ exports.createPages = ({ actions, graphql }) => {
       },
     });
     
+    
+  }
+
+  else {
+    console.log("no template key found: " + edge.node.fields.slug);
+  }
   
-
-
-    });
-  });
-};
+      });
+  
+    })};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
