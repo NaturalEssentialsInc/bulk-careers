@@ -10,7 +10,6 @@ module.exports = {
   },
   plugins: ['promise'],
   rules: {
-    indent: ['error', 2],
-    quotes: ['error', 'single'],
+    'linebreak-style': 0,
   },
 };

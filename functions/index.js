@@ -25,16 +25,19 @@ const email = new Email({
   },
 });
 
+/* eslint-disable  */
+
+const aKey = functions.config().api.akey.toString();
+const emailTarget2 = functions.config().email.target.toString();
 const mg = mailgun.client({
   username: 'api',
-  key: functions.config().mailgun.key,
+  key: aKey,
 });
-/* eslint-disable require-jsdoc */
 function sendMail(html) {
   return new Promise((resolve, reject) => {
     const message = {
       from: 'Bulk Careers Application Portal <no-reply@careers.app>',
-      to: functions.config().email.target,
+      to: emailTarget2,
       subject: '<NEW APPLICATION>',
       html,
     };

@@ -1,288 +1,129 @@
-// Applicant email template
 doctype html
-
-head
-  link(rel="stylesheet", href="style.css", data-inline)
-
-- var middle = middleInitial.length > 0 ? middleInitial + ' ': '';
-
-body
-  h1 #{firstName} #{middle}#{lastName}
-
-  p(class='address') #{streetAddress}
-  p(class='address') #{city}, #{state}
-  p(class='address') #{zip}
-  p(class='address') #{phone}
-  p(class='address') #{email}
-
-  hr
-
-  h2 Personal Information
-
-  p(class='bold') Are you authorized to work in the United States?
-  if entitledToWork
-    p Yes
-      span(class='true') &nbsp;&#10003;
-  else
-    p No
-      span(class='false') &nbsp;&times;
-    
-  p(class='bold') Are you age 17 or younger?
-  if youngerThan18
-    p Yes
-      span(class='true') &nbsp;&#10003;
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Have you ever been convicted of a felony?
-  if convictedFelon
-    p Yes
-      span(class='true') &nbsp;&#10003;
-    p(class='bold') Explanation:
-    p #{felonyExplanation}
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Are you currently on probation?
-  if probation
-    p Yes
-      span(class='true') &nbsp;&#10003;
-    p(class='bold') Until:
-    p #{probationEnd}
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Military Service
-  if militaryService
-    p Yes
-      span(class='true') &nbsp;&#10003;
-    p(class='bold') Branch:
-    p #{branch}
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold')
-    | Do you have any physical limitations or allergies that would prevent 
-    | you from doing this job?
-    if physicalLimitations
-      p Yes
-        span(class='true') &nbsp;&#10003;
-    else
-      p No
-        span(class='false') &nbsp;&times;
-
-  p(class='bold') Have you ever applied with this company before?
-  if everApplied
-    p Yes
-      span(class='true') &nbsp;&#10003;
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Were you previously employed by Natural Essentials Inc?
-  if naturalEssentialsPreviously
-    p Yes
-      span(class='true') &nbsp;&#10003;
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Which position are you applying for?
-  p #{position}
-
-  p(class='bold') How did you hear about the position?
-  p #{referral}
-
-  p(class='bold') Expected salary/rate:
-  p #{expectedRate}
-
-  p(class='bold') Date Available:
-  p #{dateAvailable}
-
-  hr
-
-  h2 Experience
-
-  h3 Current (or most recent) Employer
-
-  p(class='bold') #{employerWork1}
-  p(class='address') #{streetWork1}
-  p(class='address') #{cityWork1}, #{stateWork1}
-  p(class='address') #{zipWork1}
-  p(class='address') #{phoneWork1}
-
-  p(class='bold') Position:
-  p #{positionWork1}
-
-  p(class='bold') Pay rate:
-  p #{payWork1}
-
-  p(class='bold') Supervisor:
-  p #{supervisorWork1}
-
-  p(class='bold') May we contact?
-  if contactWork1
-    p Yes
-      span(class='true') &nbsp;&#10003;
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Start date:
-  p #{startWork1}
-
-  p(class='bold') End date:
-  p #{endWork1}
-
-  p(class='bold') Reason for leaving:
-  p #{reasonWork1}
-
-  h3 Employer 2
-
-  p(class='bold') #{employerWork2}
-  p(class='address') #{streetWork2}
-  p(class='address') #{cityWork2}, #{stateWork2}
-  p(class='address') #{zipWork2}
-  p(class='address') #{phoneWork2}
-
-  p(class='bold') Position:
-  p #{positionWork2}
-
-  p(class='bold') Pay rate:
-  p #{payWork2}
-
-  p(class='bold') Supervisor:
-  p #{supervisorWork2}
-
-  p(class='bold') May we contact?
-  if contactWork2
-    p Yes
-      span(class='true') &nbsp;&#10003;
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Start date:
-  p #{startWork2}
-
-  p(class='bold') End date:
-  p #{endWork2}
-
-  p(class='bold') Reason for leaving:
-  p #{reasonWork2}
-
-  h3 Employer 3
-
-  p(class='bold') #{employerWork3}
-  p(class='address') #{streetWork3}
-  p(class='address') #{cityWork3}, #{stateWork3}
-  p(class='address') #{zipWork3}
-  p(class='address') #{phoneWork3}
-
-  p(class='bold') Position:
-  p #{positionWork3}
-
-  p(class='bold') Pay rate:
-  p #{payWork3}
-
-  p(class='bold') Supervisor:
-  p #{supervisorWork3}
-
-  p(class='bold') May we contact?
-  if contactWork3
-    p Yes
-      span(class='true') &nbsp;&#10003;
-  else
-    p No
-      span(class='false') &nbsp;&times;
-
-  p(class='bold') Start date:
-  p #{startWork3}
-
-  p(class='bold') End date:
-  p #{endWork3}
-
-  p(class='bold') Reason for leaving:
-  p #{reasonWork3}
-
-  hr
-
-  h2 Education
-
-  h3 High School
-
-  p #{highSchool}
-
-  p(class='bold') Year completed:
-  p #{highSchoolYrCompleted}
-
-  p(class='bold') Degree:
-  p #{highSchoolDegree}
-
-  p(class='bold') Major:
-  p #{highSchoolMajor}
-
-
-  h3 College or University
-
-  p #{college}
-
-  p(class='bold') Year completed:
-  p #{collegeYrCompleted}
-
-  p(class='bold') Degree:
-  p #{collegeDegree}
-
-  p(class='bold') Major:
-  p #{collegeMajor}
-
-  h3 Trade School
-
-  p #{tradeSchool}
-
-  p(class='bold') Year completed:
-  p #{tradeSchoolYrCompleted}
-
-  p(class='bold') Degree:
-  p #{tradeSchoolDegree}
-
-  p(class='bold') Major:
-  p #{tradeSchoolMajor}
-
-  h3 Other
-
-  p #{other}
-
-  p(class='bold') Year completed:
-  p #{otherYrCompleted}
-
-  p(class='bold') Degree:
-  p #{otherDegree}
-
-  p(class='bold') Major:
-  p #{otherMajor}
-
-  h3 Special Skills
-
-  p #{specialSkills}
-
-  hr
-
-  h2 References
-
-  p(class='bold') Reference 1
-  p #{reference1}
-  p #{reference1Phone}
-
-  p(class='bold') Reference 2
-  p #{reference2}
-  p #{reference2Phone}
-
-  p(class='bold') Reference 3
-  p #{reference3}
-  p #{reference3Phone}
-
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Applicant Information
+    link(rel="stylesheet" href="style.css")
+
+  body
+    .header-container
+      h1 Applicant Information
+      h2 #{firstName} #{lastName}
+      h3 Position Applied For: #{position}
+      // img.logo(src="path/to/logo.png" alt="Company Logo")
+
+    .subpage-subtitle
+      h2 Personal Information
+    div
+      p Name: #{firstName} #{middleName} #{lastName}
+      p Address: #{address}, #{city}, #{state}, #{zip}
+      p Phone: #{phone}
+      p Email: #{email}
+      p Legal to work in the U.S.: #{legal}
+      p Veteran: #{veteran}
+      p Background Check: #{background}
+
+    .subpage-subtitle
+      h2 Desired Position
+    div
+      p Position: #{position}
+      p Start Date: #{startDate}
+      p Desired Salary: #{salary}
+      p Employment Type: #{employment}
+
+    .subpage-subtitle
+      h2 Education
+    div
+      p School: #{schoolName1} - #{schoolLocation1}, #{year}
+      p Degree: #{degree}
+      p Major: #{major1}
+      if schoolName2 && schoolLocation2
+        p School: #{schoolName2} - #{schoolLocation2}, #{year}
+        p Degree: #{degree}
+        p Major: #{major2}
+      if schoolName3 && schoolLocation3
+        p School: #{schoolName3} - #{schoolLocation3}, #{year}
+        p Degree: #{degree}
+        p Major: #{major3}
+      if schoolName4 && schoolLocation4
+        p School: #{schoolName4} - #{schoolLocation4}, #{year}
+        p Degree: #{degree}
+        p Major: #{major4}
+      if schoolName5 && schoolLocation5
+        p School: #{schoolName5} - #{schoolLocation5}, #{year}
+        p Degree: #{degree}
+        p Major: #{major5}
+      else
+        p No education provided
+
+    .subpage-subtitle
+      h2 References
+    .reference-history
+    div
+      if referenceName1 && referenceTitle1 && referenceCompany1 && referencePhone1
+        div
+         p Reference 1: #{referenceName1} - #{referenceTitle1}, #{referenceCompany1}, #{referencePhone1}
+      if referenceName2 && referenceTitle2 && referenceCompany2 && referencePhone2
+        div
+         p Reference 2: #{referenceName2} - #{referenceTitle2}, #{referenceCompany2}, #{referencePhone2}
+      if referenceName3 && referenceTitle3 && referenceCompany3 && referencePhone3
+        div
+          p Reference 3: #{referenceName3} - #{referenceTitle3}, #{referenceCompany3}, #{referencePhone3}
+      if referenceName4 && referenceTitle4 && referenceCompany4 && referencePhone4
+       div
+          p Reference 4: #{referenceName4} - #{referenceTitle4}, #{referenceCompany4}, #{referencePhone4}
+      if !referenceName1 && !referenceName2 && !referenceName3 && !referenceName4
+        p No references provided
+
+    .subpage-subtitle
+      h2 Employment History
+    .employment-history
+    div
+      if employerName1 && jobTitle1 && datesEmployed1 && employerAddress1
+        div
+          h3 #{employerName1}
+          p Job Title: #{jobTitle1}
+          p Dates Employed: #{datesEmployed1}
+          p Starting Pay: #{startingPay1} - Ending Pay: #{endingPay1}
+          p Address: #{employerAddress1}, #{employerCity1}, #{employerState1}, #{employerZip1}
+      if employerName2 && jobTitle2 && datesEmployed2 && employerAddress2
+        div
+          h3 #{employerName2}
+          p Job Title: #{jobTitle2}
+          p Dates Employed: #{datesEmployed2}
+          p Starting Pay: #{startingPay2} - Ending Pay: #{endingPay2}
+          p Address: #{employerAddress2}, #{employerCity2}, #{employerState2}, #{employerZip2}
+      if employerName3 && jobTitle3 && datesEmployed3 && employerAddress3
+        div  
+          h3 #{employerName3}
+          p Job Title: #{jobTitle3}
+          p Dates Employed: #{datesEmployed3}
+          p Starting Pay: #{startingPay3} - Ending Pay: #{endingPay3}
+          p Address: #{employerAddress3}, #{employerCity3}, #{employerState3}, #{employerZip3}
+      if employerName4 && jobTitle4 && datesEmployed4 && employerAddress4
+        div
+          h3 #{employerName4}
+          p Job Title: #{jobTitle4}
+          p Dates Employed: #{datesEmployed4}
+          p Starting Pay: #{startingPay4} - Ending Pay: #{endingPay4}
+          p Address: #{employerAddress4}, #{employerCity4}, #{employerState4}, #{employerZip4}
+      if employerName5 && jobTitle5 && datesEmployed5 && employerAddress5
+        div
+          h3 #{employerName5}
+          p Job Title: #{jobTitle5}
+          p Dates Employed: #{datesEmployed5}
+          p Starting Pay: #{startingPay5} - Ending Pay: #{endingPay5}
+          p Address: #{employerAddress5}, #{employerCity5}, #{employerState5}, #{employerZip5}
+      if !employerName1 && !employerName2 && !employerName3 && !employerName4 && !employerName5
+        p No employment history provided
+
+    div
+      h2 Applicant's Signature
+    div
+    .disclaimer
+      p Printed Name: #{printedName}
+      br
+      p Date: #{date}
+      br
+      p Signature: #{signature}

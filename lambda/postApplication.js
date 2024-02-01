@@ -6,6 +6,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+
+
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert({
@@ -27,7 +29,13 @@ if (!admin.apps.length) {
   });
 }
 
+
 exports.handler = async (event) => {
+
+
+  
+
+
   const data = JSON.parse(event.body);
 
   data.submittedAt = Date.now();
@@ -37,6 +45,7 @@ exports.handler = async (event) => {
   const ref = db.ref('applicants');
 
   const newApplicantRef = ref.push();
+
 
   return newApplicantRef
     .set(data)
@@ -54,4 +63,6 @@ exports.handler = async (event) => {
         body: JSON.stringify({ msg: error.message }),
       };
     });
+
+    
 };
