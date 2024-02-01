@@ -448,7 +448,7 @@ const Application = ({ openJobs }) => {
               </FormGroup>
             </SectionDiv>
           </SubPageSection>
-          <SubPageSection>
+          <SubPageSection isSubSect>
             <SubPageSubtitle>
               <h3>Position</h3>
             </SubPageSubtitle>
