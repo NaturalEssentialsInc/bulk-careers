@@ -34,10 +34,13 @@ const mg = mailgun.client({
   key: aKey,
 });
 function sendMail(html) {
+  // const DOMAIN = functions.config().mailgun.base;
+  const emailTarget = 'carl.palumbo@bulkapothecary.com';
+
   return new Promise((resolve, reject) => {
     const message = {
       from: 'Bulk Careers Application Portal <no-reply@careers.app>',
-      to: emailTarget2,
+      to: emailTarget,
       subject: '<NEW APPLICATION>',
       html,
     };
