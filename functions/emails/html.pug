@@ -35,26 +35,22 @@ html(lang="en")
     .subpage-subtitle
       h2 Education
     div
-      p School: #{schoolName1} - #{schoolLocation1}, #{year}
+      p School: #{schoolName1} - #{schoolLocation1}, #{year1}
       p Degree: #{degree}
       p Major: #{major1}
       if schoolName2 && schoolLocation2
-        p School: #{schoolName2} - #{schoolLocation2}, #{year}
+        p School: #{schoolName2} - #{schoolLocation2}, #{year2}
         p Degree: #{degree}
         p Major: #{major2}
       if schoolName3 && schoolLocation3
-        p School: #{schoolName3} - #{schoolLocation3}, #{year}
+        p School: #{schoolName3} - #{schoolLocation3}, #{year3}
         p Degree: #{degree}
         p Major: #{major3}
       if schoolName4 && schoolLocation4
-        p School: #{schoolName4} - #{schoolLocation4}, #{year}
+        p School: #{schoolName4} - #{schoolLocation4}, #{year4}
         p Degree: #{degree}
         p Major: #{major4}
-      if schoolName5 && schoolLocation5
-        p School: #{schoolName5} - #{schoolLocation5}, #{year}
-        p Degree: #{degree}
-        p Major: #{major5}
-      else
+      if !schoolName1 && !schoolName2 && !schoolName3 && !schoolName4
         p No education provided
 
     .subpage-subtitle

@@ -495,19 +495,14 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel stack="true">School Name</MyLabel>
-                <MyInput required type="text" stack="true" name="schoolName1" />
+                <MyInput type="text" stack="true" name="schoolName1" />
                 <MyInput type="text" stack="true" name="schoolName2" />
                 <MyInput type="text" stack="true" name="schoolName3" />
                 <MyInput type="text" stack="true" name="schoolName4" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Location</MyLabel>
-                <MyInput
-                  required
-                  type="text"
-                  stack="true"
-                  name="schoolLocation1"
-                />
+                <MyInput type="text" stack="true" name="schoolLocation1" />
                 <MyInput type="text" stack="true" name="schoolLocation2" />
 
                 <MyInput type="text" stack="true" name="schoolLocation3" />
@@ -515,7 +510,7 @@ const Application = ({ openJobs }) => {
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Years Attended</MyLabel>
-                <MyInput required type="text" stack="true" name="year1" />
+                <MyInput type="text" stack="true" name="year1" />
                 <MyInput type="text" stack="true" name="year2" />
 
                 <MyInput type="text" stack="true" name="year3 " />
