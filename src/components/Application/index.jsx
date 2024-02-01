@@ -280,7 +280,7 @@ const Application = ({ openJobs }) => {
             <MyLabel style={{ fontWeight: 'bold' }}>
               Reference ({value})
             </MyLabel>
-            <MyInput type="text" name={`referenceName${value}`} />
+            <MyInput required type="text" name={`referenceName${value}`} />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Title</MyLabel>
@@ -354,7 +354,12 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel>First Name</MyLabel>
-                <MyInput type="text" name="firstName" htmlFor="firstName" />
+                <MyInput
+                  required
+                  type="text"
+                  name="firstName"
+                  htmlFor="firstName"
+                />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Middle Name</MyLabel>
@@ -362,21 +367,21 @@ const Application = ({ openJobs }) => {
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Last Name</MyLabel>
-                <MyInput type="text" name="lastName" />
+                <MyInput required type="text" name="lastName" />
               </SectionDiv>
             </span>
             <span>
               <SectionDiv isEmpAddress>
                 <MyLabel>Address</MyLabel>
-                <MyInput type="text" name="address" />
+                <MyInput required type="text" name="address" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>City</MyLabel>
-                <MyInput type="text" name="city" />
+                <MyInput required type="text" name="city" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>State</MyLabel>
-                <Select name="state">
+                <Select required name="state">
                   {stateAbbrs.map((state) => (
                     <option value={state}>{state}</option>
                   ))}
@@ -390,17 +395,17 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel>Phone Number</MyLabel>
-                <MyInput type="text" name="phone" />
+                <MyInput required type="text" name="phone" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Email Address</MyLabel>
-                <MyInput type="text" name="email" />
+                <MyInput required type="text" name="email" />
               </SectionDiv>
             </span>
             <span>
               <SectionDiv>
                 <MyLabel>Are you legally eligible to work in the US?</MyLabel>
-                <FormGroup isRadio>
+                <FormGroup required isRadio>
                   <MyLabel>
                     Yes
                     <MyInput type="radio" name="legal" value="yes" />
@@ -414,7 +419,7 @@ const Application = ({ openJobs }) => {
               <SectionDiv>
                 <MyLabel>Are you a veteran?</MyLabel>
 
-                <FormGroup isRadio isSpec>
+                <FormGroup required isRadio isSpec>
                   <MyLabel>
                     Yes
                     <MyInput type="radio" name="veteran" value="yes" />
@@ -431,7 +436,7 @@ const Application = ({ openJobs }) => {
                 If selected for employment are you willing to submit to a
                 background check?
               </MyLabel>
-              <FormGroup isRadio>
+              <FormGroup required isRadio>
                 <MyLabel>
                   Yes
                   <MyInput type="radio" name="background" value="yes" />
@@ -450,14 +455,14 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel>Position Applying For</MyLabel>
-                <Select name="position">
+                <Select required name="position">
                   {openJobs.map((job) => (
                     <option value={job}>{job}</option>
                   ))}
                 </Select>
               </SectionDiv>
               <SectionDiv>
-                <MyLabel>Available Start Date</MyLabel>
+                <MyLabel required>Available Start Date</MyLabel>
                 <MyInput type="date" name="startDate" />
               </SectionDiv>
               <SectionDiv>
@@ -467,7 +472,7 @@ const Application = ({ openJobs }) => {
             </span>
             <SectionDiv>
               <MyLabel>Employment desired</MyLabel>
-              <FormGroup isRadio>
+              <FormGroup required isRadio>
                 <MyLabel>
                   Full Time
                   <MyInput type="radio" name="employment" value="fullTime" />
@@ -490,14 +495,19 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel stack="true">School Name</MyLabel>
-                <MyInput type="text" stack="true" name="schoolName1" />
+                <MyInput required type="text" stack="true" name="schoolName1" />
                 <MyInput type="text" stack="true" name="schoolName2" />
                 <MyInput type="text" stack="true" name="schoolName3" />
                 <MyInput type="text" stack="true" name="schoolName4" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Location</MyLabel>
-                <MyInput type="text" stack="true" name="schoolLocation1" />
+                <MyInput
+                  required
+                  type="text"
+                  stack="true"
+                  name="schoolLocation1"
+                />
                 <MyInput type="text" stack="true" name="schoolLocation2" />
 
                 <MyInput type="text" stack="true" name="schoolLocation3" />
@@ -505,19 +515,19 @@ const Application = ({ openJobs }) => {
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Years Attended</MyLabel>
-                <MyInput type="text" stack="true" name="year" />
-                <MyInput type="text" stack="true" name="year" />
+                <MyInput required type="text" stack="true" name="year1" />
+                <MyInput type="text" stack="true" name="year2" />
 
-                <MyInput type="text" stack="true" name="year" />
-                <MyInput type="text" stack="true" name="year" />
+                <MyInput type="text" stack="true" name="year3 " />
+                <MyInput type="text" stack="true" name="year4" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Degree Recieved</MyLabel>
-                <MyInput stack="true" type="text" name="degree" />
-                <MyInput stack="true" type="text" name="degree" />
+                <MyInput stack="true" type="text" name="degree1" />
+                <MyInput stack="true" type="text" name="degree2" />
 
-                <MyInput stack="true" type="text" name="degree" />
-                <MyInput stack="true" type="text" name="degree" />
+                <MyInput stack="true" type="text" name="degree3" />
+                <MyInput stack="true" type="text" name="degree4" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Major</MyLabel>
