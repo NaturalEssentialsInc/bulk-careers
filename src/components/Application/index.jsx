@@ -482,15 +482,19 @@ const Application = ({ openJobs }) => {
               <FormGroup required isRadio>
                 <MyLabel>
                   Full Time
-                  <MyInput type="radio" name="employment" value="fullTime" />
+                  <MyInput type="radio" name="employment" />
                 </MyLabel>
                 <MyLabel>
                   Part Time
-                  <MyInput type="radio" name="employment" value="partTime" />
+                  <MyInput type="radio" name="employment" />
                 </MyLabel>
                 <MyLabel>
                   Seasonal/Temporary
-                  <MyInput type="radio" name="employment" value="seasonal" />
+                  <MyInput
+                    type="radio"
+                    name="employment"
+                    // checked={e.value === 'Seasonal/Temporary'}
+                  />
                 </MyLabel>
               </FormGroup>
             </SectionDiv>
