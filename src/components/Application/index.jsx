@@ -27,11 +27,18 @@ const Application = ({ openJobs }) => {
   const [show, setShow] = useState(false);
   const [message, setMessage] = useState('');
 
+  const [isEligibleToWork, setIsEligibleToWork] = useState('');
+  const [isVeteran, setIsVeteran] = useState('');
+  const [isBackgroundCheckRequired, setIsBackgroundCheckRequired] =
+    useState('');
+
   const [values, setValues] = useState(FormObject);
 
   const endpoints = {
     post: '/.netlify/functions/postApplication',
   };
+
+  useEffect(() => {}, []);
 
   // prettier-ignore
   const stateAbbrs = [
@@ -408,11 +415,11 @@ const Application = ({ openJobs }) => {
                 <FormGroup required isRadio>
                   <MyLabel>
                     Yes
-                    <MyInput type="radio" name="legal" value="yes" />
+                    <MyInput type="radio" name="legal" />
                   </MyLabel>
                   <MyLabel>
                     No
-                    <MyInput type="radio" name="legal" value="no" />
+                    <MyInput type="radio" name="legal" />
                   </MyLabel>
                 </FormGroup>
               </SectionDiv>
@@ -422,11 +429,11 @@ const Application = ({ openJobs }) => {
                 <FormGroup required isRadio isSpec>
                   <MyLabel>
                     Yes
-                    <MyInput type="radio" name="veteran" value="yes" />
+                    <MyInput type="radio" name="veteran" />
                   </MyLabel>
                   <MyLabel>
                     No
-                    <MyInput type="radio" name="veteran" value="no" />
+                    <MyInput type="radio" name="veteran" />
                   </MyLabel>
                 </FormGroup>
               </SectionDiv>
@@ -439,11 +446,11 @@ const Application = ({ openJobs }) => {
               <FormGroup required isRadio>
                 <MyLabel>
                   Yes
-                  <MyInput type="radio" name="background" value="yes" />
+                  <MyInput type="radio" name="background" />
                 </MyLabel>
                 <MyLabel>
                   No
-                  <MyInput type="radio" name="background" value="no" />
+                  <MyInput type="radio" name="background" />
                 </MyLabel>
               </FormGroup>
             </SectionDiv>

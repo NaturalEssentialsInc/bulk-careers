@@ -4,11 +4,11 @@ const functions = require('firebase-functions');
 
 const Email = require('email-templates');
 
-const formData = require('form-data');
+// const formData = require('form-data');
 
-const Mailgun = require('mailgun.js');
+// const Mailgun = require('mailgun.js');
 
-const mailgun = new Mailgun(formData);
+// const mailgun = new Mailgun(formData);
 
 const path = require('path');
 
@@ -27,25 +27,45 @@ const email = new Email({
 
 /* eslint-disable  */
 
-const aKey = functions.config().api.akey.toString();
-const emailTarget2 = functions.config().email.target.toString();
-const mg = mailgun.client({
-  username: 'api',
-  key: aKey,
-});
 function sendMail(html) {
-  // const DOMAIN = functions.config().mailgun.base;
+  let htmlPug = html;
 
-  return new Promise((resolve, reject) => {
-    const message = {
-      from: 'Bulk Careers Application Portal <no-reply@careers.app>',
-      to: emailTarget2,
-      subject: '<NEW APPLICATION>',
-      html,
-    };
+  const mailjetPubKey = functions.config().mailjet.pubkey;
+  const mailjetPriKey = functions.config().mailjet.prikey;
+  const emailTest = functions.config().mailjet.emailtest;
+  const emailTarget = functions.config().mailjet.emailtarget;
+  const fakeFrom = 'Bulk Careers Application Portal <no-reply@careers.app>';
 
-    resolve(mg.messages.create(functions.config().mailgun.base, message));
+  const mailjet = require('node-mailjet').connect(mailjetPubKey, mailjetPriKey);
+
+  const handleEmail = mailjet.post('send', { version: 'v3.1' }).request({
+    Messages: [
+      {
+        From: {
+          Email: fakeFrom,
+          Name: 'Bulk Careers Application Portal',
+        },
+        To: [
+          {
+            Email: emailTest,
+            Name: 'Bulk Careers Application Portal',
+          },
+        ],
+        Subject: 'New Application',
+        TextPart: 'New Application',
+        HTMLPart: htmlPug,
+      },
+      request
+        .then((result) => {
+          console.log(result.body);
+        })
+        .catch((err) => {
+          console.log(err.statusCode);
+        }),
+    ],
   });
+
+  return handleEmail;
 }
 
 exports.alertNewApplication = functions.database
