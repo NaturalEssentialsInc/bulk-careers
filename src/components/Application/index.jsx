@@ -26,7 +26,7 @@ const FormGroup = ({ children, isRadio = false, isTextArea = false }) => {
 const Application = ({ openJobs }) => {
   const [show, setShow] = useState(false);
   const [message, setMessage] = useState('');
-  const [testing, setTesting] = useState(true);
+  const [testing, setTesting] = useState(false);
   const [legal, setLegal] = useState('');
   useState('');
 
