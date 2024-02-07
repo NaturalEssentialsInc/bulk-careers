@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 export const FormObject = {
   personalInformation: {
     firstName: '',
@@ -146,3 +148,140 @@ export const proObject = {
   date: '01012024',
   signature: 'Carl Palumbo',
 };
+
+export const FullPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SubPage = styled.div`
+  max-width: 1200px;
+`;
+
+export const SectionDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #222;
+  border-left: 1px solid #222;
+  border-bottom: 1px solid #222;
+
+  width: 100%;
+  padding: 0.2rem;
+  ${(props) => (props.isEmpAddress ? `min-width: 40%` : ``)}
+  ${(props) => (props.isSubmit ? `border: none` : ``)}
+`;
+
+export const MyInput = styled.input`
+  border: none;
+  background-color: #c8e0f4;
+  min-height: 30px;
+  border-radius: 5px;
+
+  margin-bottom: ${(props) => (props.stack ? '0.2rem' : 'none')};
+
+  border-bottom: ${(props) => (props.stack ? '1px solid black' : 'none')};
+
+  ${(props) =>
+    props.isSignature
+      ? `min-height: 100px; background-color: #eee; width: 80%; align-self: center;font-size: 24px; border-radius: 10px; padding: 15px; margin: 15px; font-style: italic;`
+      : ``};
+`;
+
+export const MyLabel = styled.label`
+  ${(props) =>
+    props.stack
+      ? `display: flex;
+           justify-content: center;
+           border-bottom: 1px solid #222;
+           margin-bottom: 0.2rem;`
+      : `display: flex;
+    border: none;
+    padding-left: 0.2rem;
+    align-items: center;
+    shadow: none;
+    margin-right: auto;`};
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  padding-bottom: 1rem;
+  align-items: end;
+  justify-content: center;
+  flex-direction: row;
+  border-top: 5px solid #222;
+  margin-top: 3rem;
+`;
+
+export const SubPageTitle = styled.h3`
+  color: #222;
+  background: white;
+  margin-right: 15px;
+  margin-left: 0px;
+  border: none;
+  font-weight: bold;
+`;
+
+export const SubPageSection = styled.div`
+  flex-direction: column;
+  span {
+    display: flex;
+    flex-direction: row;
+  }
+
+  margin: 10px;
+`;
+export const HeaderBlurb = styled.p`
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  width: 33%;
+  background: #eee;
+`;
+
+export const Disclaimer = styled.span`
+  display: flex;
+  align-text: center;
+  align-content: center;
+
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid #222;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: bold;
+  background: #eee;
+`;
+export const Logo = styled.img`
+  background-size: contain;
+  width: 200px;
+`;
+
+export const SubPageSubtitle = styled.div`
+  display: flex;
+  h3 {
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+  p {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  background-color: #4444bb;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+`;
+
+export const Select = styled.select`
+  border: none;
+  min-height: 30px;
+  background-color: #c8e0f4;
+`;

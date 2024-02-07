@@ -189,34 +189,59 @@ const Application = ({ openJobs }) => {
 
   let EmploymentGrouping = (props) => {
     let value = props.value + 1;
+    let tabIndex = false;
     return (
       <div style={{}}>
         <span>
           <SectionDiv>
             <MyLabel style={{ fontWeight: 'bold' }}>Employer ({value})</MyLabel>
-            <MyInput type="text" name={`employerName${value}`} />
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`employerName${value}`}
+            />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Job Title</MyLabel>
-            <MyInput type="text" name={`jobTitle${value}`} />
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`jobTitle${value}`}
+            />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Dates Employed</MyLabel>
-            <MyInput type="text" name={`datesEmployed${value}`} />
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`datesEmployed${value}`}
+            />
           </SectionDiv>
         </span>
         <span>
           <SectionDiv>
             <MyLabel>Work Phone</MyLabel>
-            <MyInput type="text" name={`workPhone${value}`} />
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`workPhone${value}`}
+            />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Starting pay rate</MyLabel>
-            <MyInput type="text" name={`startingPay${value}`} />
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`startingPay${value}`}
+            />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Ending pay rate</MyLabel>
-            <MyInput type="text" name={`endingPay${value}`} />
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`endingPay${value}`}
+            />
           </SectionDiv>
         </span>
         <span>
@@ -277,6 +302,7 @@ const Application = ({ openJobs }) => {
 
   let ReferencesGrouping = (props) => {
     let value = props.value + 1;
+    let tabIndex = value === 1 ? 5 : value === 2 ? 6 : value === 3 ? 7 : 8;
     return (
       <div style={{}}>
         <span>
@@ -285,18 +311,7 @@ const Application = ({ openJobs }) => {
               Reference ({value})
             </MyLabel>
             <MyInput
-              tabIndex={
-                value === 1
-                  ? 1
-                  : value === 2
-                    ? 2
-                    : value === 3
-                      ? 3
-                      : value === 4
-                        ? 4
-                        : 5
-              }
-              required={!testing}
+              tabIndex={tabIndex}
               type="text"
               name={`referenceName${value}`}
             />
@@ -304,17 +319,7 @@ const Application = ({ openJobs }) => {
           <SectionDiv>
             <MyLabel>Title</MyLabel>
             <MyInput
-              tabIndex={
-                value === 1
-                  ? 1
-                  : value === 2
-                    ? 2
-                    : value === 3
-                      ? 3
-                      : value === 4
-                        ? 4
-                        : 5
-              }
+              tabIndex={tabIndex}
               type="text"
               name={`referenceTitle${value}`}
             />
@@ -323,37 +328,58 @@ const Application = ({ openJobs }) => {
             <MyLabel>Company</MyLabel>
             <MyInput
               type="text"
-              tabIndex={
-                value === 1
-                  ? 1
-                  : value === 2
-                    ? 2
-                    : value === 3
-                      ? 3
-                      : value === 4
-                        ? 4
-                        : 5
-              }
+              tabIndex={tabIndex}
               name={`referenceCompany${value}`}
             />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Phone</MyLabel>
             <MyInput
-              tabIndex={
-                value === 1
-                  ? 1
-                  : value === 2
-                    ? 2
-                    : value === 3
-                      ? 3
-                      : value === 4
-                        ? 4
-                        : 5
-              }
+              tabIndex={tabIndex}
               type="text"
               name={`referencePhone${value}`}
             />
+          </SectionDiv>
+        </span>
+      </div>
+    );
+  };
+
+  let educationGrouping = (props) => {
+    let value = props.value + 1;
+    let tabIndex = value === 1 ? 1 : value === 2 ? 2 : value === 3 ? 3 : 4;
+    return (
+      <div style={{}}>
+        <span>
+          <SectionDiv>
+            <MyLabel style={{ fontWeight: 'bold' }}>
+              School Name ({value})
+            </MyLabel>
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`schoolName${value}`}
+            />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Location</MyLabel>
+            <MyInput
+              tabIndex={tabIndex}
+              type="text"
+              name={`schoolLocation${value}`}
+            />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Years Attended</MyLabel>
+            <MyInput tabIndex={tabIndex} type="text" name={`year${value}`} />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Degree Recieved</MyLabel>
+            <MyInput tabIndex={tabIndex} type="text" name={`degree${value}`} />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Major</MyLabel>
+            <MyInput tabIndex={tabIndex} type="text" name={`major${value}`} />
           </SectionDiv>
         </span>
       </div>
