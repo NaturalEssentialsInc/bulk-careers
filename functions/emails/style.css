@@ -98,12 +98,6 @@ h3 {
   background: #eee;
 }
 
-/* Logo styling */
-.logo {
-  background-size: contain;
-  width: 200px;
-}
-
 /* SubPageSubtitle equivalent */
 .subpage-subtitle {
   display: flex;

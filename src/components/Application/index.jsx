@@ -285,6 +285,17 @@ const Application = ({ openJobs }) => {
               Reference ({value})
             </MyLabel>
             <MyInput
+              tabIndex={
+                value === 1
+                  ? 1
+                  : value === 2
+                    ? 2
+                    : value === 3
+                      ? 3
+                      : value === 4
+                        ? 4
+                        : 5
+              }
               required={!testing}
               type="text"
               name={`referenceName${value}`}
@@ -292,15 +303,57 @@ const Application = ({ openJobs }) => {
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Title</MyLabel>
-            <MyInput type="text" name={`referenceTitle${value}`} />
+            <MyInput
+              tabIndex={
+                value === 1
+                  ? 1
+                  : value === 2
+                    ? 2
+                    : value === 3
+                      ? 3
+                      : value === 4
+                        ? 4
+                        : 5
+              }
+              type="text"
+              name={`referenceTitle${value}`}
+            />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Company</MyLabel>
-            <MyInput type="text" name={`referenceCompany${value}`} />
+            <MyInput
+              type="text"
+              tabIndex={
+                value === 1
+                  ? 1
+                  : value === 2
+                    ? 2
+                    : value === 3
+                      ? 3
+                      : value === 4
+                        ? 4
+                        : 5
+              }
+              name={`referenceCompany${value}`}
+            />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Phone</MyLabel>
-            <MyInput type="text" name={`referencePhone${value}`} />
+            <MyInput
+              tabIndex={
+                value === 1
+                  ? 1
+                  : value === 2
+                    ? 2
+                    : value === 3
+                      ? 3
+                      : value === 4
+                        ? 4
+                        : 5
+              }
+              type="text"
+              name={`referencePhone${value}`}
+            />
           </SectionDiv>
         </span>
       </div>
@@ -513,41 +566,76 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel stack="true">School Name</MyLabel>
-                <MyInput type="text" stack="true" name="schoolName1" />
-                <MyInput type="text" stack="true" name="schoolName2" />
-                <MyInput type="text" stack="true" name="schoolName3" />
+                <MyInput
+                  tabIndex={1}
+                  type="text"
+                  stack="true"
+                  name="schoolName1"
+                />
+                <MyInput
+                  type="text"
+                  tabIndex={2}
+                  stack="true"
+                  name="schoolName2"
+                />
+                <MyInput
+                  type="text"
+                  tabIndex={3}
+                  stack="true"
+                  name="schoolName3"
+                />
                 <MyInput type="text" stack="true" name="schoolName4" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Location</MyLabel>
-                <MyInput type="text" stack="true" name="schoolLocation1" />
-                <MyInput type="text" stack="true" name="schoolLocation2" />
+                <MyInput
+                  type="text"
+                  stack="true"
+                  tabIndex={1}
+                  name="schoolLocation1"
+                />
+                <MyInput
+                  type="text"
+                  stack="true"
+                  name="schoolLocation2"
+                  tabIndex={2}
+                />
 
-                <MyInput type="text" stack="true" name="schoolLocation3" />
-                <MyInput type="text" stack="true" name="schoolLocation4" />
+                <MyInput
+                  type="text"
+                  stack="true"
+                  tabIndex={3}
+                  name="schoolLocation3"
+                />
+                <MyInput
+                  type="text"
+                  stack="true"
+                  name="schoolLocation4"
+                  tabIndex={4}
+                />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Years Attended</MyLabel>
-                <MyInput type="text" stack="true" name="year1" />
-                <MyInput type="text" stack="true" name="year2" />
+                <MyInput type="text" stack="true" name="year1" tabIndex={1} />
+                <MyInput type="text" stack="true" name="year2" tabIndex={2} />
 
-                <MyInput type="text" stack="true" name="year3 " />
-                <MyInput type="text" stack="true" name="year4" />
+                <MyInput type="text" stack="true" name="year3 " tabIndex={3} />
+                <MyInput type="text" stack="true" name="year4" tabIndex={4} />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Degree Recieved</MyLabel>
-                <MyInput stack="true" type="text" name="degree1" />
-                <MyInput stack="true" type="text" name="degree2" />
+                <MyInput stack="true" type="text" name="degree1" tabIndex={1} />
+                <MyInput stack="true" type="text" name="degree2" tabIndex={2} />
 
-                <MyInput stack="true" type="text" name="degree3" />
-                <MyInput stack="true" type="text" name="degree4" />
+                <MyInput stack="true" type="text" name="degree3" tabIndex={3} />
+                <MyInput stack="true" type="text" name="degree4" tabIndex={4} />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Major</MyLabel>
-                <MyInput type="text" stack="true" name="major1" />
-                <MyInput type="text" stack="true" name="major2" />
-                <MyInput type="text" stack="true" name="major3" />
-                <MyInput type="text" stack="true" name="major4" />
+                <MyInput type="text" stack="true" name="major1" tabIndex={1} />
+                <MyInput type="text" stack="true" name="major2" tabIndex={2} />
+                <MyInput type="text" stack="true" name="major3" tabIndex={3} />
+                <MyInput type="text" stack="true" name="major4" tabIndex={4} />
               </SectionDiv>
             </span>
           </SubPageSection>
@@ -581,17 +669,22 @@ const Application = ({ openJobs }) => {
 
             <SectionDiv>
               <MyLabel>Name</MyLabel>
-              <MyInput type="text" name="printedName" />
+              <MyInput required={!testing} type="text" name="printedName" />
             </SectionDiv>
             <SectionDiv>
               <MyLabel>Date</MyLabel>
-              <MyInput type="date" name="date" />
+              <MyInput required={!testing} type="date" name="date" />
             </SectionDiv>
             <SectionDiv>
               <MyLabel>
                 <strong>Signature</strong>
               </MyLabel>
-              <MyInput isSignature type="text" name="signature" />
+              <MyInput
+                required={!testing}
+                isSignature
+                type="text"
+                name="signature"
+              />
             </SectionDiv>
             <SectionDiv isSubmit>
               <SubmitButton>Submit</SubmitButton>
@@ -604,10 +697,6 @@ const Application = ({ openJobs }) => {
           <p>Thank you for your submission</p>
         </Popup>
       )}
-
-      <SubmitButton onClick={() => console.log(openJobs[0][1])}>
-        Log
-      </SubmitButton>
     </FullPage>
   );
 };

@@ -28,7 +28,7 @@ const email = new Email({
 /* eslint-disable  */
 
 const aKey = functions.config().api.akey;
-const testEmail = functions.config().api.emailtest;
+const testEmail = functions.config().api.emailtest2;
 const intraEmail = functions.config().email.target;
 const mg = mailgun.client({
   username: 'api',
