@@ -326,7 +326,7 @@ const Application = ({ openJobs }) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(tempObject),
+      body: JSON.stringify(proObject),
     });
     let data = await response.json();
     setShow(true);
