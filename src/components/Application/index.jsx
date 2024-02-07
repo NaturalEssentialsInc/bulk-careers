@@ -26,11 +26,9 @@ const FormGroup = ({ children, isRadio = false, isTextArea = false }) => {
 const Application = ({ openJobs }) => {
   const [show, setShow] = useState(false);
   const [message, setMessage] = useState('');
-
-  const [isEligibleToWork, setIsEligibleToWork] = useState('');
-  const [isVeteran, setIsVeteran] = useState('');
-  const [isBackgroundCheckRequired, setIsBackgroundCheckRequired] =
-    useState('');
+  const [testing, setTesting] = useState(true);
+  const [legal, setLegal] = useState('');
+  useState('');
 
   const [values, setValues] = useState(FormObject);
 
@@ -133,7 +131,6 @@ const Application = ({ openJobs }) => {
       flex-direction: row;
     }
 
-    box-shadow: none;
     margin: 10px;
   `;
   const HeaderBlurb = styled.p`
@@ -287,7 +284,11 @@ const Application = ({ openJobs }) => {
             <MyLabel style={{ fontWeight: 'bold' }}>
               Reference ({value})
             </MyLabel>
-            <MyInput required type="text" name={`referenceName${value}`} />
+            <MyInput
+              required={!testing}
+              type="text"
+              name={`referenceName${value}`}
+            />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Title</MyLabel>
@@ -309,24 +310,27 @@ const Application = ({ openJobs }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    let inputs = e.target.elements;
-    // console.log(typeof inputs);
-    inputs = Array.from(inputs);
-    // console.log(inputs);
+    let form = e.target;
+    let formData = new FormData(form);
     let tempObject = {};
-    inputs.forEach((input) => {
-      if (input.name) {
-        tempObject[input.name] = input.value;
+
+    for (let [name, value] of formData.entries()) {
+      if (form.elements[name].type === 'radio') {
+        let selectedRadio = [...form.elements[name]].find(
+          (radio) => radio.checked,
+        );
+        tempObject[name] = selectedRadio ? selectedRadio.value : '';
+      } else {
+        tempObject[name] = value;
       }
-    });
-    // console.log(proObject);
+    }
 
     let response = await fetch(endpoints.post, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(proObject),
+      body: JSON.stringify(tempObject),
     });
     let data = await response.json();
     setShow(true);
@@ -362,7 +366,7 @@ const Application = ({ openJobs }) => {
               <SectionDiv>
                 <MyLabel>First Name</MyLabel>
                 <MyInput
-                  required
+                  required={!testing}
                   type="text"
                   name="firstName"
                   htmlFor="firstName"
@@ -374,21 +378,21 @@ const Application = ({ openJobs }) => {
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Last Name</MyLabel>
-                <MyInput required type="text" name="lastName" />
+                <MyInput required={!testing} type="text" name="lastName" />
               </SectionDiv>
             </span>
             <span>
               <SectionDiv isEmpAddress>
                 <MyLabel>Address</MyLabel>
-                <MyInput required type="text" name="address" />
+                <MyInput required={!testing} type="text" name="address" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>City</MyLabel>
-                <MyInput required type="text" name="city" />
+                <MyInput required={!testing} type="text" name="city" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>State</MyLabel>
-                <Select required name="state">
+                <Select required={!testing} name="state">
                   {stateAbbrs.map((state) => (
                     <option value={state}>{state}</option>
                   ))}
@@ -402,38 +406,38 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel>Phone Number</MyLabel>
-                <MyInput required type="text" name="phone" />
+                <MyInput required={!testing} type="text" name="phone" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Email Address</MyLabel>
-                <MyInput required type="text" name="email" />
+                <MyInput required={!testing} type="text" name="email" />
               </SectionDiv>
             </span>
             <span>
               <SectionDiv>
                 <MyLabel>Are you legally eligible to work in the US?</MyLabel>
-                <FormGroup required isRadio>
+                <FormGroup required={!testing} isRadio>
                   <MyLabel>
                     Yes
-                    <MyInput type="radio" name="legal" />
+                    <MyInput type="radio" name="legal" value={'yes'} />
                   </MyLabel>
                   <MyLabel>
                     No
-                    <MyInput type="radio" name="legal" />
+                    <MyInput type="radio" name="legal" value={'no'} />
                   </MyLabel>
                 </FormGroup>
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Are you a veteran?</MyLabel>
 
-                <FormGroup required isRadio isSpec>
+                <FormGroup required={!testing} isRadio isSpec>
                   <MyLabel>
                     Yes
-                    <MyInput type="radio" name="veteran" />
+                    <MyInput type="radio" name="veteran" value={'yes'} />
                   </MyLabel>
                   <MyLabel>
                     No
-                    <MyInput type="radio" name="veteran" />
+                    <MyInput type="radio" name="veteran" value={'no'} />
                   </MyLabel>
                 </FormGroup>
               </SectionDiv>
@@ -443,14 +447,14 @@ const Application = ({ openJobs }) => {
                 If selected for employment are you willing to submit to a
                 background check?
               </MyLabel>
-              <FormGroup required isRadio>
+              <FormGroup required={!testing} isRadio>
                 <MyLabel>
                   Yes
-                  <MyInput type="radio" name="background" />
+                  <MyInput type="radio" name="background" value={'yes'} />
                 </MyLabel>
                 <MyLabel>
                   No
-                  <MyInput type="radio" name="background" />
+                  <MyInput type="radio" name="background" value={'no'} />
                 </MyLabel>
               </FormGroup>
             </SectionDiv>
@@ -462,14 +466,17 @@ const Application = ({ openJobs }) => {
             <span>
               <SectionDiv>
                 <MyLabel>Position Applying For</MyLabel>
-                <Select required name="position">
-                  {openJobs.map((job) => (
-                    <option value={job}>{job}</option>
-                  ))}
+                <Select required={!testing} name="position">
+                  {openJobs.map(
+                    (job) => (
+                      console.log(job),
+                      (<option value={job[1]}>{job[1]}</option>)
+                    ),
+                  )}
                 </Select>
               </SectionDiv>
               <SectionDiv>
-                <MyLabel required>Available Start Date</MyLabel>
+                <MyLabel required={!testing}>Available Start Date</MyLabel>
                 <MyInput type="date" name="startDate" />
               </SectionDiv>
               <SectionDiv>
@@ -479,21 +486,21 @@ const Application = ({ openJobs }) => {
             </span>
             <SectionDiv>
               <MyLabel>Employment desired</MyLabel>
-              <FormGroup required isRadio>
+              <FormGroup required={!testing} isRadio>
                 <MyLabel>
                   Full Time
-                  <MyInput type="radio" name="employment" />
+                  <MyInput type="radio" name="employment" value={'full-time'} />
                 </MyLabel>
                 <MyLabel>
                   Part Time
-                  <MyInput type="radio" name="employment" />
+                  <MyInput type="radio" name="employment" value={'part-time'} />
                 </MyLabel>
                 <MyLabel>
                   Seasonal/Temporary
                   <MyInput
                     type="radio"
                     name="employment"
-                    // checked={e.value === 'Seasonal/Temporary'}
+                    value={'seasonal-temporary'}
                   />
                 </MyLabel>
               </FormGroup>
@@ -597,6 +604,10 @@ const Application = ({ openJobs }) => {
           <p>Thank you for your submission</p>
         </Popup>
       )}
+
+      <SubmitButton onClick={() => console.log(openJobs[0][1])}>
+        Log
+      </SubmitButton>
     </FullPage>
   );
 };
