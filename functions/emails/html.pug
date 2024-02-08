@@ -5,121 +5,130 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Applicant Information
     link(rel="stylesheet" href="style.css")
-
   body
-    .header-container
-      h1 Applicant Information
-      h2 #{firstName} #{lastName}
-      h3 Position Applied For: #{position}
-      // img.logo(src="path/to/logo.png" alt="Company Logo")
-
-    .subpage-subtitle
-      h2 Personal Information
+    .body
+    h1 Applicant Information
     div
-      p Name: #{firstName} #{middleName} #{lastName}
+      h2 Personal Information
+      p Name: #{firstName} #{middleName ? middleName + ' ' : ''}#{lastName}
       p Address: #{address}, #{city}, #{state}, #{zip}
       p Phone: #{phone}
       p Email: #{email}
-      p Legal to work in the U.S.: #{legal}
-      p Veteran: #{veteran}
-      p Background Check: #{background}
-
-    .subpage-subtitle
-      h2 Desired Position
-    div
-      p Position: #{position}
+      p Position Applied For: #{position}
       p Start Date: #{startDate}
-      p Desired Salary: #{salary}
-      p Employment Type: #{employment}
+      p Legal to Work: #{legal}
+      p Veteran Status: #{veteran}
+      p Willing to Undergo Background Check: #{background}
+      
+    h2 Employment History
 
-    .subpage-subtitle
-      h2 Education
+    h4 Employer 1
+    p Job Title: #{jobTitle1}
+    p Employer: #{employerName1}
+    p Dates Employed: #{datesEmployed1}
+    p Employer Address: #{employerAddress1}, #{employerCity1}, #{employerState1}, #{employerZip1}
+    p Starting Pay: #{startingPay1}, Ending Pay: #{endingPay1}
+    p Work Phone: #{workPhone1}
+    if employerName2
+      
+      h4 Employer 2
+      p Job Title: #{jobTitle2}
+      p Employer: #{employerName2}
+      p Dates Employed: #{datesEmployed2}
+      p Employer Address: #{employerAddress2}, #{employerCity2}, #{employerState2}, #{employerZip2}
+      p Starting Pay: #{startingPay2}, Ending Pay: #{endingPay2}
+      p Work Phone: #{workPhone2}
+    if employerName3
+   
+      h4 Employer 3
+      p Job Title: #{jobTitle3}
+      p Employer: #{employerName3}
+      p Dates Employed: #{datesEmployed3}
+      p Employer Address: #{employerAddress3}, #{employerCity3}, #{employerState3}, #{employerZip3}
+      p Starting Pay: #{startingPay3}, Ending Pay: #{endingPay3}
+      p Work Phone: #{workPhone3}
+    if employerName4
+  
+      h4 Employer 4
+      p Job Title: #{jobTitle4}
+      p Employer: #{employerName4}
+      p Dates Employed: #{datesEmployed4}
+      p Employer Address: #{employerAddress4}, #{employerCity4}, #{employerState4}, #{employerZip4}
+      p Starting Pay: #{startingPay4}, Ending Pay: #{endingPay4}
+      p Work Phone: #{workPhone4}
+    if employerName5
+   
+      h4 Employer 5
+      p Job Title: #{jobTitle5}
+      p Employer: #{employerName5}
+      p Dates Employed: #{datesEmployed5}
+      p Employer Address: #{employerAddress5}, #{employerCity5}, #{employerState5}, #{employerZip5}
+      p Starting Pay: #{startingPay5}, Ending Pay: #{endingPay5}
+      p Work Phone: #{workPhone5}
+
+    h2 Education Background
     div
-      p School: #{schoolName1} - #{schoolLocation1}, #{year1}
-      p Degree: #{degree}
+      h4 School 1
+      p School Name: #{schoolName1}
+      p Location: #{schoolLocation1}
+      p Degree: #{degree1}
       p Major: #{major1}
-      if schoolName2 && schoolLocation2
-        p School: #{schoolName2} - #{schoolLocation2}, #{year2}
-        p Degree: #{degree}
-        p Major: #{major2}
-      if schoolName3 && schoolLocation3
-        p School: #{schoolName3} - #{schoolLocation3}, #{year3}
-        p Degree: #{degree}
+      p Years: #{year1}
+    if schoolName2
+    div
+      h4 School 2
+      p School Name: #{schoolName2}
+      p Location: #{schoolLocation2}
+      p Degree: #{degree2}
+      p Major: #{major2}
+      p Years: #{year2}
+    if schoolName3
+      div
+        h4 School 3
+        p School Name: #{schoolName3}
+        p Location: #{schoolLocation3}
+        p Degree: #{degree3}
         p Major: #{major3}
-      if schoolName4 && schoolLocation4
-        p School: #{schoolName4} - #{schoolLocation4}, #{year4}
-        p Degree: #{degree}
+        p Years: #{year3}
+    if schoolName4
+      div
+        h4 School 4
+        p School Name: #{schoolName4}
+        p Location: #{schoolLocation4}
+        p Degree: #{degree4}
         p Major: #{major4}
-      if !schoolName1 && !schoolName2 && !schoolName3 && !schoolName4
-        p No education provided
+        p Years: #{year4}
 
-    .subpage-subtitle
-      h2 References
-    .reference-history
+    h2 References
     div
-      if referenceName1 && referenceTitle1 && referenceCompany1 && referencePhone1
-        div
-         p Reference 1: #{referenceName1} - #{referenceTitle1}, #{referenceCompany1}, #{referencePhone1}
-      if referenceName2 && referenceTitle2 && referenceCompany2 && referencePhone2
-        div
-         p Reference 2: #{referenceName2} - #{referenceTitle2}, #{referenceCompany2}, #{referencePhone2}
-      if referenceName3 && referenceTitle3 && referenceCompany3 && referencePhone3
-        div
-          p Reference 3: #{referenceName3} - #{referenceTitle3}, #{referenceCompany3}, #{referencePhone3}
-      if referenceName4 && referenceTitle4 && referenceCompany4 && referencePhone4
-       div
-          p Reference 4: #{referenceName4} - #{referenceTitle4}, #{referenceCompany4}, #{referencePhone4}
-      if !referenceName1 && !referenceName2 && !referenceName3 && !referenceName4
-        p No references provided
+      h4 Reference 1
+      p Name: #{referenceName1}
+      p Title: #{referenceTitle1}
+      p Company: #{referenceCompany1}
+      p Phone: #{referencePhone1}
+    if referenceName2
+      div
+        h4 Reference 2
+        p Name: #{referenceName2}
+        p Title: #{referenceTitle2}
+        p Company: #{referenceCompany2}
+        p Phone: #{referencePhone2}
+    if referenceName3
+      div
+        h4 Reference 3
+        p Name: #{referenceName3}
+        p Title: #{referenceTitle3}
+        p Company: #{referenceCompany3}
+        p Phone: #{referencePhone3}
+    if referenceName4
+      div
+        h4 Reference 4
+        p Name: #{referenceName4}
+        p Title: #{referenceTitle4}
+        p Company: #{referenceCompany4}
+        p Phone: #{referencePhone4}
 
-    .subpage-subtitle
-      h2 Employment History
-    .employment-history
-    div
-      if employerName1 && jobTitle1 && datesEmployed1 && employerAddress1
-        div
-          h3 #{employerName1}
-          p Job Title: #{jobTitle1}
-          p Dates Employed: #{datesEmployed1}
-          p Starting Pay: #{startingPay1} - Ending Pay: #{endingPay1}
-          p Address: #{employerAddress1}, #{employerCity1}, #{employerState1}, #{employerZip1}
-      if employerName2 && jobTitle2 && datesEmployed2 && employerAddress2
-        div
-          h3 #{employerName2}
-          p Job Title: #{jobTitle2}
-          p Dates Employed: #{datesEmployed2}
-          p Starting Pay: #{startingPay2} - Ending Pay: #{endingPay2}
-          p Address: #{employerAddress2}, #{employerCity2}, #{employerState2}, #{employerZip2}
-      if employerName3 && jobTitle3 && datesEmployed3 && employerAddress3
-        div  
-          h3 #{employerName3}
-          p Job Title: #{jobTitle3}
-          p Dates Employed: #{datesEmployed3}
-          p Starting Pay: #{startingPay3} - Ending Pay: #{endingPay3}
-          p Address: #{employerAddress3}, #{employerCity3}, #{employerState3}, #{employerZip3}
-      if employerName4 && jobTitle4 && datesEmployed4 && employerAddress4
-        div
-          h3 #{employerName4}
-          p Job Title: #{jobTitle4}
-          p Dates Employed: #{datesEmployed4}
-          p Starting Pay: #{startingPay4} - Ending Pay: #{endingPay4}
-          p Address: #{employerAddress4}, #{employerCity4}, #{employerState4}, #{employerZip4}
-      if employerName5 && jobTitle5 && datesEmployed5 && employerAddress5
-        div
-          h3 #{employerName5}
-          p Job Title: #{jobTitle5}
-          p Dates Employed: #{datesEmployed5}
-          p Starting Pay: #{startingPay5} - Ending Pay: #{endingPay5}
-          p Address: #{employerAddress5}, #{employerCity5}, #{employerState5}, #{employerZip5}
-      if !employerName1 && !employerName2 && !employerName3 && !employerName4 && !employerName5
-        p No employment history provided
-
-    div
-      h2 Applicant's Signature
-    div
-    .disclaimer
-      p Printed Name: #{printedName}
-      br
-      p Date: #{date}
-      br
-      p Signature: #{signature}
+    h2 Signature 
+    p Printed Name: #{printedName}
+    p Signature: #{signature}
+    p Date: #{date}

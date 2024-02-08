@@ -400,7 +400,7 @@ const Application = ({ openJobs }) => {
         );
         tempObject[name] = selectedRadio ? selectedRadio.value : '';
       } else {
-        tempObject[name] = value;
+        tempObject[name] = value.trim();
       }
     }
 
@@ -453,7 +453,7 @@ const Application = ({ openJobs }) => {
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Middle Name</MyLabel>
-                <MyInput type="text" name="firstName" htmlFor="firstName" />
+                <MyInput type="text" name="middleName" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Last Name</MyLabel>
