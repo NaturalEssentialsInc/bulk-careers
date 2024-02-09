@@ -71,12 +71,14 @@ const Application = ({ openJobs }) => {
     width: 100%;
     padding: 0.2rem;
     ${(props) => (props.isEmpAddress ? `min-width: 40%` : ``)}
-    ${(props) => (props.isSubmit ? `border: none` : ``)}
+    ${(props) => (props.isSubmit ? `border: none` : ``)};
   `;
 
   const MyInput = styled.input`
     border: none;
     background-color: #c8e0f4;
+    margin-top: 0.2rem;
+
     min-height: 30px;
     border-radius: 5px;
 
@@ -189,59 +191,86 @@ const Application = ({ openJobs }) => {
 
   let EmploymentGrouping = (props) => {
     let value = props.value + 1;
-    let tabIndex = false;
+
     return (
       <div style={{}}>
         <span>
           <SectionDiv>
             <MyLabel style={{ fontWeight: 'bold' }}>Employer ({value})</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`employerName${value}`}
-            />
+            <MyInput type="text" name={`employerName${value}`} />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Job Title</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`jobTitle${value}`}
-            />
+            <MyInput type="text" name={`jobTitle${value}`} />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Dates Employed</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`datesEmployed${value}`}
-            />
+            <MyInput type="text" name={`datesEmployed${value}`} />
           </SectionDiv>
         </span>
         <span>
           <SectionDiv>
             <MyLabel>Work Phone</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`workPhone${value}`}
-            />
+            <MyInput type="text" name={`workPhone${value}`} />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Starting pay rate</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`startingPay${value}`}
-            />
+
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                width: '100%',
+              }}
+            >
+              <text
+                style={{
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  margin: '0px 0px 0px 5px',
+                }}
+              >
+                $
+              </text>
+              <MyInput
+                style={{
+                  width: '95%',
+                  padding: '0.2rem',
+                  margin: '0px 0px 0px 5px',
+                }}
+                type="text"
+                name={`startingPay${value}`}
+              />
+            </div>
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Ending pay rate</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`endingPay${value}`}
-            />
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                width: '100%',
+              }}
+            >
+              <text
+                style={{
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  margin: '0px 0px 0px 5px',
+                }}
+              >
+                $
+              </text>
+              <MyInput
+                style={{
+                  width: '95%',
+                  padding: '0.2rem',
+                  margin: '0px 0px 0px 5px',
+                }}
+                type="text"
+                name={`endingPay${value}`}
+              />
+            </div>
           </SectionDiv>
         </span>
         <span>
@@ -310,81 +339,65 @@ const Application = ({ openJobs }) => {
             <MyLabel style={{ fontWeight: 'bold' }}>
               Reference ({value})
             </MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`referenceName${value}`}
-            />
+            <MyInput type="text" name={`referenceName${value}`} />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Title</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`referenceTitle${value}`}
-            />
+            <MyInput type="text" name={`referenceTitle${value}`} />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Company</MyLabel>
-            <MyInput
-              type="text"
-              tabIndex={tabIndex}
-              name={`referenceCompany${value}`}
-            />
+            <MyInput type="text" name={`referenceCompany${value}`} />
           </SectionDiv>
           <SectionDiv>
             <MyLabel>Phone</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`referencePhone${value}`}
-            />
+            <MyInput type="text" name={`referencePhone${value}`} />
           </SectionDiv>
         </span>
       </div>
     );
   };
 
-  let educationGrouping = (props) => {
-    let value = props.value + 1;
-    let tabIndex = value === 1 ? 1 : value === 2 ? 2 : value === 3 ? 3 : 4;
-    return (
-      <div style={{}}>
-        <span>
-          <SectionDiv>
-            <MyLabel style={{ fontWeight: 'bold' }}>
-              School Name ({value})
-            </MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`schoolName${value}`}
-            />
-          </SectionDiv>
-          <SectionDiv>
-            <MyLabel>Location</MyLabel>
-            <MyInput
-              tabIndex={tabIndex}
-              type="text"
-              name={`schoolLocation${value}`}
-            />
-          </SectionDiv>
-          <SectionDiv>
-            <MyLabel>Years Attended</MyLabel>
-            <MyInput tabIndex={tabIndex} type="text" name={`year${value}`} />
-          </SectionDiv>
-          <SectionDiv>
-            <MyLabel>Degree Recieved</MyLabel>
-            <MyInput tabIndex={tabIndex} type="text" name={`degree${value}`} />
-          </SectionDiv>
-          <SectionDiv>
-            <MyLabel>Major</MyLabel>
-            <MyInput tabIndex={tabIndex} type="text" name={`major${value}`} />
-          </SectionDiv>
-        </span>
-      </div>
-    );
-  };
+  // let educationGrouping = (props) => {
+  //   let value = props.value + 1;
+  //   let tabIndex = value === 1 ? 1 : value === 2 ? 2 : value === 3 ? 3 : 4;
+  //   return (
+  //     <div style={{}}>
+  //       <span>
+  //         <SectionDiv>
+  //           <MyLabel style={{ fontWeight: 'bold' }}>
+  //             School Name ({value})
+  //           </MyLabel>
+  //           <MyInput
+  //
+  //             type="text"
+  //             name={`schoolName${value}`}
+  //           />
+  //         </SectionDiv>
+  //         <SectionDiv>
+  //           <MyLabel>Location</MyLabel>
+  //           <MyInput
+  //
+  //             type="text"
+  //             name={`schoolLocation${value}`}
+  //           />
+  //         </SectionDiv>
+  //         <SectionDiv>
+  //           <MyLabel>Years Attended</MyLabel>
+  //           <MyInput type="text" name={`year${value}`} />
+  //         </SectionDiv>
+  //         <SectionDiv>
+  //           <MyLabel>Degree Recieved</MyLabel>
+  //           <MyInput type="text" name={`degree${value}`} />
+  //         </SectionDiv>
+  //         <SectionDiv>
+  //           <MyLabel>Major</MyLabel>
+  //           <MyInput type="text" name={`major${value}`} />
+  //         </SectionDiv>
+  //       </span>
+  //     </div>
+  //   );
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -560,7 +573,32 @@ const Application = ({ openJobs }) => {
               </SectionDiv>
               <SectionDiv>
                 <MyLabel>Desired Pay</MyLabel>
-                <MyInput type="number" name="salary" />
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    width: '100%',
+                  }}
+                >
+                  <text
+                    style={{
+                      fontSize: '20px',
+                      fontWeight: 'bold',
+                      margin: '0px 0px 0px 5px',
+                    }}
+                  >
+                    $
+                  </text>
+                  <MyInput
+                    style={{
+                      width: '85%',
+                      padding: '0.2rem',
+                      margin: '0px 0px 0px 5px',
+                    }}
+                    type="number"
+                    name="salary"
+                  />
+                </div>
               </SectionDiv>
             </span>
             <SectionDiv>
@@ -584,8 +622,7 @@ const Application = ({ openJobs }) => {
                 </MyLabel>
               </FormGroup>
             </SectionDiv>
-          </SubPageSection>
-          <SubPageSection>
+
             <SubPageSubtitle>
               <h3>Education</h3>
             </SubPageSubtitle>
@@ -610,7 +647,12 @@ const Application = ({ openJobs }) => {
                   stack="true"
                   name="schoolName3"
                 />
-                <MyInput type="text" stack="true" name="schoolName4" />
+                <MyInput
+                  tabIndex={4}
+                  type="text"
+                  stack="true"
+                  name="schoolName4"
+                />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Location</MyLabel>
@@ -702,15 +744,15 @@ const Application = ({ openJobs }) => {
               <MyInput required={!testing} type="date" name="date" />
             </SectionDiv>
             <SectionDiv>
-              <MyLabel>
+              {/* <MyLabel>
                 <strong>Signature</strong>
-              </MyLabel>
-              <MyInput
+              </MyLabel> */}
+              {/* <MyInput
                 required={!testing}
                 isSignature
                 type="text"
                 name="signature"
-              />
+              /> */}
             </SectionDiv>
             <SectionDiv isSubmit>
               <SubmitButton>Submit</SubmitButton>
