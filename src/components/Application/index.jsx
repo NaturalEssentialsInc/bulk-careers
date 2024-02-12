@@ -331,7 +331,7 @@ const Application = ({ openJobs }) => {
 
   let ReferencesGrouping = (props) => {
     let value = props.value + 1;
-    let tabIndex = value === 1 ? 5 : value === 2 ? 6 : value === 3 ? 7 : 8;
+    let count = 0;
     return (
       <div style={{}}>
         <span>
@@ -358,46 +358,42 @@ const Application = ({ openJobs }) => {
     );
   };
 
-  // let educationGrouping = (props) => {
-  //   let value = props.value + 1;
-  //   let tabIndex = value === 1 ? 1 : value === 2 ? 2 : value === 3 ? 3 : 4;
-  //   return (
-  //     <div style={{}}>
-  //       <span>
-  //         <SectionDiv>
-  //           <MyLabel style={{ fontWeight: 'bold' }}>
-  //             School Name ({value})
-  //           </MyLabel>
-  //           <MyInput
-  //
-  //             type="text"
-  //             name={`schoolName${value}`}
-  //           />
-  //         </SectionDiv>
-  //         <SectionDiv>
-  //           <MyLabel>Location</MyLabel>
-  //           <MyInput
-  //
-  //             type="text"
-  //             name={`schoolLocation${value}`}
-  //           />
-  //         </SectionDiv>
-  //         <SectionDiv>
-  //           <MyLabel>Years Attended</MyLabel>
-  //           <MyInput type="text" name={`year${value}`} />
-  //         </SectionDiv>
-  //         <SectionDiv>
-  //           <MyLabel>Degree Recieved</MyLabel>
-  //           <MyInput type="text" name={`degree${value}`} />
-  //         </SectionDiv>
-  //         <SectionDiv>
-  //           <MyLabel>Major</MyLabel>
-  //           <MyInput type="text" name={`major${value}`} />
-  //         </SectionDiv>
-  //       </span>
-  //     </div>
-  //   );
-  // };
+  let EducationGrouping = (props) => {
+    let value = props.value + 1;
+    let tabIndex = value === 1 ? 1 : value === 2 ? 2 : value === 3 ? 3 : 4;
+    return (
+      <div style={{}}>
+        <span>
+          <SectionDiv>
+            <MyLabel style={{ fontWeight: 'bold' }}>
+              School Name ({value})
+            </MyLabel>
+            <MyInput
+              required={value == 1 ? true : false}
+              type="text"
+              name={`schoolName${value}`}
+            />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Location</MyLabel>
+            <MyInput type="text" name={`schoolLocation${value}`} />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Years Attended</MyLabel>
+            <MyInput type="text" name={`year${value}`} />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Degree Recieved</MyLabel>
+            <MyInput type="text" name={`degree${value}`} />
+          </SectionDiv>
+          <SectionDiv>
+            <MyLabel>Major</MyLabel>
+            <MyInput type="text" name={`major${value}`} />
+          </SectionDiv>
+        </span>
+      </div>
+    );
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -626,86 +622,54 @@ const Application = ({ openJobs }) => {
             <SubPageSubtitle>
               <h3>Education</h3>
             </SubPageSubtitle>
-            <span>
+            {[...Array(4)].map((_, i) => (
+              <EducationGrouping key={i} value={i} />
+            ))}
+            {/* <span style={{ display: 'flex', flexDirection: 'row' }}>
               <SectionDiv>
                 <MyLabel stack="true">School Name</MyLabel>
-                <MyInput
-                  tabIndex={1}
-                  type="text"
-                  stack="true"
-                  name="schoolName1"
-                />
-                <MyInput
-                  type="text"
-                  tabIndex={2}
-                  stack="true"
-                  name="schoolName2"
-                />
-                <MyInput
-                  type="text"
-                  tabIndex={3}
-                  stack="true"
-                  name="schoolName3"
-                />
-                <MyInput
-                  tabIndex={4}
-                  type="text"
-                  stack="true"
-                  name="schoolName4"
-                />
-              </SectionDiv>
-              <SectionDiv>
                 <MyLabel stack="true">Location</MyLabel>
                 <MyInput
                   type="text"
                   stack="true"
-                  tabIndex={1}
-                  name="schoolLocation1"
+                  name="schoolName1"
+                  tabIndex={0}
                 />
-                <MyInput
-                  type="text"
-                  stack="true"
-                  name="schoolLocation2"
-                  tabIndex={2}
-                />
-
-                <MyInput
-                  type="text"
-                  stack="true"
-                  tabIndex={3}
-                  name="schoolLocation3"
-                />
-                <MyInput
-                  type="text"
-                  stack="true"
-                  name="schoolLocation4"
-                  tabIndex={4}
-                />
+                <MyInput type="text" stack="true" name="schoolName2" />
+                <MyInput type="text" stack="true" name="schoolName3" />
+                <MyInput type="text" stack="true" name="schoolLocation1" />
+                <MyLabel stack="true">Years Attended</MyLabel>
+                <MyInput type="text" stack="true" name="schoolName4" />
               </SectionDiv>
               <SectionDiv>
-                <MyLabel stack="true">Years Attended</MyLabel>
-                <MyInput type="text" stack="true" name="year1" tabIndex={1} />
-                <MyInput type="text" stack="true" name="year2" tabIndex={2} />
+                <MyInput type="text" stack="true" name="schoolLocation2" />
 
-                <MyInput type="text" stack="true" name="year3 " tabIndex={3} />
-                <MyInput type="text" stack="true" name="year4" tabIndex={4} />
+                <MyInput type="text" stack="true" name="schoolLocation3" />
+                <MyInput type="text" stack="true" name="schoolLocation4" />
+              </SectionDiv>
+              <SectionDiv>
+                <MyInput type="text" stack="true" name="year1" />
+                <MyInput type="text" stack="true" name="year2" />
+
+                <MyInput type="text" stack="true" name="year3 " />
+                <MyInput type="text" stack="true" name="year4" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Degree Recieved</MyLabel>
-                <MyInput stack="true" type="text" name="degree1" tabIndex={1} />
-                <MyInput stack="true" type="text" name="degree2" tabIndex={2} />
+                <MyInput stack="true" type="text" name="degree1" />
+                <MyInput stack="true" type="text" name="degree2" />
 
-                <MyInput stack="true" type="text" name="degree3" tabIndex={3} />
-                <MyInput stack="true" type="text" name="degree4" tabIndex={4} />
+                <MyInput stack="true" type="text" name="degree3" />
+                <MyInput stack="true" type="text" name="degree4" />
               </SectionDiv>
               <SectionDiv>
                 <MyLabel stack="true">Major</MyLabel>
-                <MyInput type="text" stack="true" name="major1" tabIndex={1} />
-                <MyInput type="text" stack="true" name="major2" tabIndex={2} />
-                <MyInput type="text" stack="true" name="major3" tabIndex={3} />
-                <MyInput type="text" stack="true" name="major4" tabIndex={4} />
+                <MyInput type="text" stack="true" name="major1" />
+                <MyInput type="text" stack="true" name="major2" />
+                <MyInput type="text" stack="true" name="major3" />
+                <MyInput type="text" stack="true" name="major4" />
               </SectionDiv>
-            </span>
+            </span> */}
           </SubPageSection>
           <SubPageSection>
             <SubPageSubtitle>
