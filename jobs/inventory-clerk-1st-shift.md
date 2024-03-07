@@ -2,7 +2,7 @@
 templateKey: Job
 postDate: 2024-03-07T14:57:45.443Z
 active: true
-title: Inventory Clerk (1st Shift)
+title: "Inventory Clerk "
 ---
 <!--StartFragment-->
 
