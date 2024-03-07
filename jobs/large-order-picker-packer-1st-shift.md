@@ -2,7 +2,7 @@
 templateKey: Job
 postDate: 2024-03-07T14:58:59.506Z
 active: true
-title: Large Order Picker/Packer (1st Shift)
+title: "Large Order Picker/Packer "
 ---
 <!--StartFragment-->
 
