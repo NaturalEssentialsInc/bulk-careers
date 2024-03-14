@@ -6,7 +6,7 @@ title: "Inventory Clerk "
 ---
 <!--StartFragment-->
 
-**Natural Essentials, Inc.** DBA Bulk Apothecary is a growing company that specializes in providing high-quality raw materials, essential oils, and other basic cosmetics to customers around the world. We are committed to providing our customers with the best possible products and services, and we are looking for talented and experienced ** Inventory Control Clerk** to join our team in our warehouse/distribution center.\
+**Natural Essentials, Inc.** DBA Bulk Apothecary is a growing company that specializes in providing high-quality raw materials, essential oils, and other basic cosmetics to customers around the world. We are committed to providing our customers with the best possible products and services, and we are looking for talented and experienced  **Inventory Control Clerk** to join our team in our warehouse/distribution center.\
 \
 **Responsibilities:**
 
@@ -33,9 +33,7 @@ Knowledge, Skills and Abilities Required:**
 * The ability to work well with others and provide information transparently and effectively.
 * Must be able to stand for 8+ hours a day and lift up to 55 Lbs. as needed. 
 
-
-
-**Wage:** $18.00-$22.00/HR depending upon experience.
+**Wage:** $17.00-$21.00/HR depending upon experience.
 
 **Schedule:** Monday-Friday 7:00AM-3:30PM +/-. 
 
