@@ -15,7 +15,11 @@ const JobList = ({ data }) => {
         {jobs.map((job) => (
           <div
             style={{
-              display: 'none',
+              display: `${
+                job.node.frontmatter.title === 'Inventory Clerk '
+                  ? 'none'
+                  : 'block'
+              }`,
             }}
             className={activeJob}
             key={job.node.id}
