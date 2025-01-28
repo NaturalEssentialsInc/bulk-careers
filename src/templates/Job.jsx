@@ -26,7 +26,11 @@ const JobPost = ({ data, location }) => {
     '.  Apply today!';
 
   return (
-    <Layout>
+    <Layout
+      style={{
+        display: `${title == 'Inventory Clerk ' ? 'none' : 'block'}`,
+      }}
+    >
       <Metadata title={title} description={description} />
       <div className={posting}>
         <h1>{title}</h1>
