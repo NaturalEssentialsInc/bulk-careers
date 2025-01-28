@@ -16,7 +16,7 @@ const JobList = ({ data }) => {
           <div
             style={{
               display: `${
-                job.node.frontmatter.title === 'Inventory Clerk '
+                job.node.frontmatter.title === 'Palceholder Markdown'
                   ? 'none'
                   : 'block'
               }`,
