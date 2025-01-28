@@ -11,21 +11,30 @@ const JobList = ({ data }) => {
 
   return (
     <>
-      {jobs.map((job) => (
-        <div className={activeJob} key={job.node.id}>
-          <h3>{job.node.frontmatter.title}</h3>
-          <p>
-            {job.node.excerpt}
-            <Link to={job.node.fields.slug}>learn more!</Link>
-          </p>
-          <Link
-            className={apply}
-            to={`/application?position=${job.node.fields.slug.substring(1)}`}
+      <>
+        {jobs.map((job) => (
+          <div
+            style={{
+              display: 'none',
+            }}
+            className={activeJob}
+            key={job.node.id}
           >
-            Apply now
-          </Link>
-        </div>
-      ))}
+            <h3>{job.node.frontmatter.title}</h3>
+            <p>
+              {job.node.excerpt}
+              <Link to={job.node.fields.slug}>learn more!</Link>
+            </p>
+            <Link
+              className={apply}
+              to={`/application?position=${job.node.fields.slug.substring(1)}`}
+            >
+              Apply now
+            </Link>
+          </div>
+        ))}
+      </>
+
       <div className={activeJob}>
         <h3>Any open entry-level position</h3>
         <p>
